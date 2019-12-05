@@ -26,10 +26,13 @@ for filename in os.listdir("FisherRooms"): #for each set of rooms in FisherRooms
         #print(len(rooms[0]))
         #print("Objects Size: ")
         #print(len(objects))
+    print("Amount of rooms in " + filename + ": ")
+    print(len(rooms))
     allRoomsByRoomType.append(rooms) #add list of rooms to overall list of rooms, needed for later
     file.close()
     #break #DELETE only for testing, only does first file
 
-print(allObjectsByRoomType)
+print("Amount of Room Types: ")
+print(len(allObjectsByRoomType))
 
 
