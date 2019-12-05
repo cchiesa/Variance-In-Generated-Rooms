@@ -1,0 +1,4 @@
+"bench_chair","car","chair_set","fence","garage_door","gym_equipment","gym_equipment_1","gym_equipment_2","household_appliance","iron","ironing_board","kitchen_cabinet","kitchen_cabinet_1","kitchen_cabinet_2","kitchen_cabinet_3","motorcycle","plant","shelving","sofa","stairs","trash_can","wall_lamp","wall_lamp_1","wall_lamp_2","washer"
+0,0,0,0,0,1,1,1,0,1,1,1,0,0,0,1,0,0,0,1,1,1,1,1,1
+0,1,1,1,1,1,0,0,1,0,0,1,1,1,0,0,1,0,0,0,0,0,0,0,0
+1,1,0,0,1,1,0,0,0,0,0,1,1,1,1,0,0,1,1,0,0,0,0,0,0

@@ -1,0 +1,2 @@
+"car","car_1","chair","chair_1","chandelier","chandelier_1","desk","dining_table","garage_door","garage_door_1","pet","shelving","shelving_1","shelving_2","shoes_cabinet","sofa","television","window","window_1","window_2","window_3"
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1

@@ -1,0 +1,6 @@
+"armchair","armchair_1","books","books_1","car","chair","chandelier","computer","curtain","desk","door","dresser","garage_door","gym_equipment","gym_equipment_1","gym_equipment_2","hanger","kitchen_set","motorcycle","office_chair","pedestal_fan","picture_frame","picture_frame_1","picture_frame_2","plant","plant_1","plant_2","plant_3","refrigerator","rug","shelving","shelving_1","table_lamp","trash_can","whiteboard","window","window_1"
+0,0,1,1,1,0,0,1,0,1,0,0,1,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,1,1,1,0,1,1,1
+0,0,0,0,1,1,0,0,0,1,0,0,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0
+0,0,1,0,1,1,1,0,1,1,1,0,0,1,1,0,0,0,1,0,0,1,1,1,1,0,0,0,0,1,1,0,0,0,0,1,0
+0,0,0,0,1,1,0,0,0,1,0,0,1,1,1,1,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0
+1,1,0,0,0,0,0,1,0,1,1,1,1,1,1,0,0,1,1,0,1,0,0,0,1,1,1,1,1,0,1,0,0,0,0,1,1
