@@ -1,4 +1,5 @@
 import os
+
 allObjectsByRoomType = [] #list of list of objects by room type
 allRoomsByRoomType = [] #list of list of rooms by room type
 roomTypeIndex = [] #keep track of what file is associated with each index
