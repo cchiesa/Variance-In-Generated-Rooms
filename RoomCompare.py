@@ -65,14 +65,17 @@ generalizedRooms = [] #we now want to recreate each of the rooms according to gl
 #print("index")
 #print(globalObjectsList.index(allObjectsByRoomType[0][67]))
 
+print("Generalizing rooms, this may take a while...")
+
 for i in range(0, len(allRoomsByRoomType)): #for each roomtype
     for x in range(0, len(allRoomsByRoomType[i])): #for each room in specific roomtype
         revisedRoom = [0] * len(globalObjectsList) #create new empty room
         #now we have a list of 0s, we now need to change present objects to 1
         for y in range(0, len(allRoomsByRoomType[i][x])): #y iterates through specific room, should be 0s and 1s
             curObjectIndex = globalObjectsList.index(allObjectsByRoomType[i][y]) #get object at current position of roomtype and find its index in globalObjectsList
-            if allRoomsByRoomType[i][x][y] == 1: #if object is present in current room
-                revisedRoom[curObjectIndex] == 1 #set object in revisedRoom to 1
+            if allRoomsByRoomType[i][x][y] == "1": #if object is present in current room
+                #print("if hit")
+                revisedRoom[curObjectIndex] = 1 #set object in revisedRoom to 1
         generalizedRooms.append(revisedRoom) #add revisedRoom to generalizedRooms
 
 #write generalized rooms to file GeneralizedRooms.txt
