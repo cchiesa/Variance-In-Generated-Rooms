@@ -1,0 +1,17 @@
+{
+"vertices":[
+{"id":"0","name":"room","frequency":0.99999},
+{"id":"1","name":"paper","frequency":0.52},
+{"id":"2","name":"monitor","frequency":0.28},
+{"id":"3","name":"floor","frequency":0.92}
+],
+"rules":[
+{"id":"0","source":"2","target":"1","factor":"horizontal-support"},
+{"id":"1","source":"0","target":"3","factor":"support"},
+{"id":"2","source":"0","target":"1","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.08},
+{"id":"1","value":0.68},
+{"id":"2","value":0.08}
+]}
