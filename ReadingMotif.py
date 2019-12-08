@@ -15,19 +15,22 @@ for filename in os.listdir("SunRGBDMotif"): #for each room
 
     ids = [] #index is id num, string at index position is associated with that id num
     roomDetails = [] #keeps track of what objects and relationships are in room
-    roomValues = [] #keeps track of values, frequency value and relationship present (1, 0 if not) should match index of roomDetails array
+    roomValues = [] #keeps track of values, frequency value and relationship present should match index of roomDetails array
+    roomProbability = [] #keeps track of probabilities of relationships
     with open("SunRGBDMotif/" + filename) as json_file:
         data = json.load(json_file)
         for v in data['vertices']:
             ids.append(v['name']) #add object to ids list
             roomDetails.append(v['name']) #add object to roomDetails
             roomValues.append(v['frequency']) # add frequency value to roomValues at same index as name in ids
+        for p in data['probability']:
+            roomProbability.append(p['value'])
+        idCount = 0
         for r in data['rules']:
             relationshipString = "" + ids[int(r['source'])] + "_" + r['factor'] + "_" + ids[int(r['target'])]
             roomDetails.append(relationshipString)
-            roomValues.append(1)
-        #print(roomDetails)
-        #print(roomValues)
+            roomValues.append(roomProbability[idCount])
+            idCount = idCount + 1
         allRoomDetails.append(roomDetails)
         allRoomValues.append(roomValues)
     json_file.close()
@@ -50,7 +53,7 @@ generalizedRooms = [] #we now want to recreate each of the rooms according to gl
 print("Generalizing rooms, this may take a while...")
 
 for i in range(0, len(allRoomDetails)): #for each room set of details
-    revisedRoom = [0] * len(globalDetailsList) #create new empty room
+    revisedRoom = [0.0] * len(globalDetailsList) #create new empty room
     #now we have a list of 0s, we now need to change present objects to 1 or respective value (like frequency)
     for y in range(0, len(allRoomValues[i])): #y iterates through specific room values, should be not 0
         curDetailIndex = globalDetailsList.index(allRoomDetails[i][y]) #get detail at current position of room and find its index in globalDetailsList
