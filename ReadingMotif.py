@@ -58,4 +58,38 @@ for i in range(0, len(allRoomDetails)): #for each room set of details
             revisedRoom[curDetailIndex] = str(allRoomValues[i][y]) #set object in revisedRoom to not 0 value
     generalizedRooms.append(revisedRoom) #add revisedRoom to generalizedRooms
 
-print(generalizedRooms)
+#print(generalizedRooms)
+
+print("Creating GeneralizedRoomsRoomTypeIndexMotif.txt...")
+#write global room type to its own file for later use
+file = open("GeneralizedRoomsRoomTypeIndexMotif.txt","w")
+#write objects first
+for i in range(0, len(allRoomTypes)):
+    #file.write("\"")
+    file.write(allRoomTypes[i])
+    #file.write("\"")
+    file.write("\n")
+file.close()
+
+#write generalized rooms to file GeneralizedRoomsMotif.txt
+file = open("GeneralizedRoomsMotif.txt","w")
+#write details first
+for i in range(0, len(globalDetailsList) - 1):
+    file.write("\"")
+    file.write(globalDetailsList[i])
+    file.write("\"")
+    file.write(",")
+file.write("\"")
+file.write(globalDetailsList[len(globalDetailsList)-1])
+file.write("\"")
+file.write("\n")
+
+#next write generalized rooms
+for x in range(0, len(generalizedRooms)):
+    for y in range(0, len(generalizedRooms[x]) - 1):
+        temp = str(generalizedRooms[x][y]) + ","
+        file.write(temp)
+    file.write(str(generalizedRooms[x][y+1]))
+    file.write("\n")
+
+file.close()
