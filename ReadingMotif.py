@@ -5,7 +5,7 @@ allRoomTypes = [] #keep track of roomtype at index
 allRoomDetails = [] #all room details in one list, index of room matches allRoomValues
 allRoomValues = [] #all room values in one list, index of room matches allRoomDetails
 
-for filename in os.listdir("SunRGBDMotifSOMEROOMS"): #for each room
+for filename in os.listdir("SunRGBDMotif"): #for each room
     #add roomType to allRoomsByRoomType
     roomType = filename
     badChars = "_0123456789"
@@ -16,7 +16,7 @@ for filename in os.listdir("SunRGBDMotifSOMEROOMS"): #for each room
     ids = [] #index is id num, string at index position is associated with that id num
     roomDetails = [] #keeps track of what objects and relationships are in room
     roomValues = [] #keeps track of values, frequency value and relationship present (1, 0 if not) should match index of roomDetails array
-    with open("SunRGBDMotifSOMEROOMS/" + filename) as json_file:
+    with open("SunRGBDMotif/" + filename) as json_file:
         data = json.load(json_file)
         for v in data['vertices']:
             ids.append(v['name']) #add object to ids list
@@ -32,6 +32,7 @@ for filename in os.listdir("SunRGBDMotifSOMEROOMS"): #for each room
         allRoomValues.append(roomValues)
     json_file.close()
 
+print("Done making individual room details/values")
 #now create list of all objects from every room type, no overlap
 globalDetailsList = [] 
 
