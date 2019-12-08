@@ -1,4 +1,4 @@
-# Tests Variance of All Rooms
+# Cluster All Rooms from Fisher
 import numpy as np 
 import pandas as pd 
 import os
@@ -12,12 +12,19 @@ df = pd.read_csv('GenRooms.csv')
 roomType = df['RoomType']
 
 del df['RoomType']
-data = df
+rows = df.sample(frac = .05)
+data = rows
 var_names = df.columns.values
-
+print(data)
 km = KModes(n_clusters=4, init='Huang', n_init=5, verbose=1)
 
 clusters = km.fit_predict(data)
 
 # Print the cluster centroids
 print(km.cluster_centroids_)
+
+file = open("outfile.txt","w") 
+
+for i in km.cluster_centroids_:
+    file.write(i)
+file.close()
