@@ -1,3 +1,5 @@
+#OLD CODE AS OF 12/11/19, use as reference code
+
 #using GeneralizedRooms.txt, create objects list and rooms list, then use term freqeuncy
 
 objects = [] #all objects
@@ -9,7 +11,8 @@ objectsLine = objectsLine[0 : len(objectsLine)-1] #remove '\n' at end of string
 objects = objectsLine.split(',') #seperate objects by comma
 for i in range(0, len(objects)):
     objects[i] = objects[i].replace('"',"") #remove double qoutes from objects
-
+    print(objects[i])
+SystemExit()
 
 while True: #read in rooms until end of file
     roomLine = file.readline() #room ex: 1,1,0,0 ...

@@ -7,7 +7,6 @@ roomTypeIndex = [] #keep track of what file is associated with each index
 #Note: To find what a specific object correlates to a 0 or 1 in a specific room, we use its index and search for the object in the object array that correlates with it.
 
 for filename in os.listdir("FisherRooms"): #for each set of rooms in FisherRooms
-    #print(filename)
     file = open("FisherRooms/" + filename,"r") #open up set of rooms
     objectsLine = file.readline() #read line of objects
     objectsLine = objectsLine[0 : len(objectsLine)-1] #remove '\n' at end of string
@@ -27,20 +26,10 @@ for filename in os.listdir("FisherRooms"): #for each set of rooms in FisherRooms
             break
         room = roomLine.split(',') #split 0s and 1s into list
         rooms.append(room) #add room list to rooms (list of all rooms of certain room type)
-        #print(rooms)
-        #print(objects)
-        #print("Room Size: ")
-        #print(len(rooms[0]))
-        #print("Objects Size: ")
-        #print(len(objects))
-    #print("Amount of rooms in " + filename + ": ")
-    #print(len(rooms))
     allRoomsByRoomType.append(rooms) #add list of rooms to overall list of rooms, needed for global list later on
     file.close()
 
 #at this point all text files have been read
-#print("Amount of Room Types: ")
-#print(len(allObjectsByRoomType))
 
 #now create list of all objects from every room type, no overlap
 globalObjectsList = []
@@ -51,20 +40,7 @@ for i in range(0, len(allObjectsByRoomType)): #go through each list of objects
             globalObjectsList.append(o) #add object to globalObjectsList
 globalObjectsList.sort() #sort for organization purposes
 
-#print("All Objects")
-#print(globalObjectsList)
-#print("globalObjectsList Size: ")
-#print(len(globalObjectsList))
-
 generalizedRooms = [] #we now want to recreate each of the rooms according to globalObjectsList
-
-#print("TESTS:")
-#print(allRoomsByRoomType[0]) #list of rooms for a certain roomtype
-#print(allRoomsByRoomType[0][0]) #specific room, list of 0s/1s
-#print(allRoomsByRoomType[0][0][2]) #0 or 1
-#print(allObjectsByRoomType[0][0])
-#print("index")
-#print(globalObjectsList.index(allObjectsByRoomType[0][67]))
 
 print("Generalizing rooms, this may take a while...")
 
@@ -87,9 +63,9 @@ for i in range(0, len(allRoomsByRoomType)): #for each roomtype
                 revisedRoom[curObjectIndex] = 1 #set object in revisedRoom to 1
         generalizedRooms.append(revisedRoom) #add revisedRoom to generalizedRooms
 
-print("Creating GeneralizedRoomsRoomTypeIndex.txt...")
+print("Creating GenRoomsFISHERObjectsRoomTypeIndex.txt...")
 #write global room type to its own file for later use
-file = open("GeneralizedRoomsRoomTypeIndex.txt","w")
+file = open("GenRoomsFISHERObjectsRoomTypeIndex.txt","w")
 #write objects first
 for i in range(0, len(globalRoomTypeIndex)):
     file.write("\"")
@@ -99,7 +75,7 @@ for i in range(0, len(globalRoomTypeIndex)):
 file.close()
 
 #write generalized rooms to file GeneralizedRooms.txt
-file = open("GeneralizedRooms.txt","w")
+file = open("GenRoomsFISHERObjects.txt","w")
 #write objects first
 for i in range(0, len(globalObjectsList) - 1):
     file.write("\"")
