@@ -4,20 +4,55 @@ import pandas as pd
 import os
 import matplotlib.pyplot as plt
 import numpy as np
-
+import re
+#from pandas import ExcelWriter
+#from pandas import ExcelFile
 
 from kmodes.kmodes import KModes
-df = pd.read_csv('GenRooms.csv')
+#compares room and center for finding room type
+def compare(room, center):
+    for i in range(0,len(room)):
+        r = np.int64(room[i])
+        if(r != center[i]):
+            #print(type(room[i]),type(center[i]))
+            #print(room[i],center[i])
+            return False
+    return True
+
+df = pd.read_csv('GenRoomsCSV.csv')
 # make data frame
-roomType = df['RoomType']
+print(df)
 
-del df['RoomType']
-data = df.sample(frac = .05)
+file = open("GenRoomsRoomType.txt","r") #open up indexes
+roomType = []
+while True: #read in roomtypes until end of file
+    roomLine = file.readline() #room type in qoutes
+    roomLine = roomLine[0 : len(roomLine)-1] #remove '\n' at end of string
+    if not roomLine: #end of file
+        break
+    roomLine = roomLine.replace('"',"") #remove double qoutes from room types
+    roomType.append(roomLine)
+#print(roomType)
+file.close()
 
+#read in rooms for checking the center index later
+f = open("GenRoomsSUNCGObjects.txt")
+rooms = []
+object = f.readline()
+while True: #read in rooms until end of file
+    roomLine = f.readline() #room ex: 1,1,0,0 ...
+    roomLine = roomLine[0 : len(roomLine)-1] #remove '\n' at end of string
+    if not roomLine: #end of file
+        break
+    r = roomLine.split(',') #split 0s and 1s into list
+    room = np.array(r)
+    rooms.append(room) #add room list to rooms
 
-var_names = df.columns.values
-print(data)
-km = KModes(n_clusters=3, init='random', n_init=2, verbose=1)
+file.close()
+
+data = df.sample(frac = 0.003)
+
+km = KModes(n_clusters=2, init='random', n_init=1, verbose=1)
 
 
 clusters = km.fit(data)
@@ -26,7 +61,7 @@ print(clusters)
 # Print the cluster centroids
 #print(km.cluster_centroids_)
 
-file = open("outfile.txt","w") 
+file = open("out.txt","w") 
 print("CENTERS")
 for i in km.cluster_centroids_:
     for j in i:
@@ -42,16 +77,25 @@ print('Training iterations: {}'.format(km.n_iter_))
 indices = []
 for center in km.cluster_centroids_:
  #   print "1"
-    for index, row in df.iterrows():
+    index = 0
+    for room in rooms:
         #print index, " "
-        if np.array_equal( np.array(center) , np.array(row) ):
-            indices.append(index)   
-            print index 
-            break
-print indices
+        #print(row)
+        
+        #print("room: ",type(room))
+        #print("center: ", type(center))
+        if (compare(room,center)):
+            print(index)
+            indices.append(index)
+        index = index + 1
+            
+#print indices
 #print indicies[0]
-f = open('indices.txt')
+############add 1 to indices in excel file to find room
+f = open("indices.txt","w")
 for i in indices:
     f.write(str(i))
     f.write("\n")
+
+
 
