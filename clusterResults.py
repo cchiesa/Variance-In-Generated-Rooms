@@ -4,13 +4,14 @@ import sqlite3
 #from sklearn.metrics import silhouette_score
 
 
-#X = np.array([[0.0, 2.1, 1.3, 3.2], [1.1, 0.0, 0.1, -1],
-    #          [2.4, -1, 0.0, 1.1], [2.0, .2, 1.8, 0.0]])
-#clustering = AgglomerativeClustering().fit_predict(X)
-#print("clustering fit predict:")
-#print(clustering)
+X = np.array([[0.0, 2.1, 1.3, 3.2], [1.1, 0.0, 0.1, -1],
+              [2.4, -1, 0.0, 1.1], [2.0, .2, 1.8, 0.0]])
+clustering = AgglomerativeClustering(
+    affinity='precomputed', linkage='single', n_clusters=3).fit_predict(X)
+print("clustering fit predict:")
+print(clustering)
 
- 
+
 def k_means(num_clusters, features):
     # get starting centers randomly
     center = []
@@ -87,7 +88,7 @@ def getAnswer(room1, room2, conn):
         elif(row[0] == 'extremelySimilar'):
             count += 1
             sum = sum + 0
-    #print("TEST sql")
+    # print("TEST sql")
     # print(c.rowcount)
     if(count == 0):
        # return -1
@@ -140,7 +141,7 @@ for img in imgs:
 print(distMatrix[0])
 print(distMatrix)
 
-#test = getAnswer("CustomBathroom1.2580f005.jpg","CustomBathroom2.b78c9823.jpg", conn)
+# test = getAnswer("CustomBathroom1.2580f005.jpg","CustomBathroom2.b78c9823.jpg", conn)
 # main
 
 # get list of rooms
@@ -153,11 +154,12 @@ conn.close()
 #               cluster_labels = cluster.fit_predict(data)
 #                silhouette_avg = metrics.silhouette_score(data,cluster_labels) #May want to do sampling here
 X = np.array(distMatrix)
-clustering = AgglomerativeClustering(affinity='precomputed', linkage='single', n_clusters=4).fit(
+clustering = AgglomerativeClustering(affinity='precomputed', linkage='single', n_clusters=3).fit(
     X)
 
-#cluster_labels = clustering.fit_predict(X)
-#print(cluster_labels)
-#silhouette_avg = metrics.silhouette_score(X, cluster_labels)
-#print("Sil avg: ")
-#print(silhouette_avg)
+cluster_labels = clustering.fit_predict(X)
+print(cluster_labels)
+print(len(cluster_labels))
+silhouette_avg = metrics.silhouette_score(X, cluster_labels)
+print("Sil avg: ")
+print(silhouette_avg)
