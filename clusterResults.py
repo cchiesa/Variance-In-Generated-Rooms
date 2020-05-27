@@ -133,7 +133,7 @@ for img in imgs:
     # append to distMatrix
     distMatrix.append(listDist)
 
-print(distMatrix)
+print(distMatrix[0])
 
 #test = getAnswer("CustomBathroom1.2580f005.jpg","CustomBathroom2.b78c9823.jpg", conn)
 # main
