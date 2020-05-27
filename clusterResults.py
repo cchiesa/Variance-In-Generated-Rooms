@@ -1,13 +1,14 @@
 import sqlite3
 import numpy as np
 from sklearn.cluster import AgglomerativeClustering
+from sklearn.metrics import silhouette_score
 
 
-# X = np.array([[0.0, 2.1, 1.3, 3.2], [1.1, 0.0, 0.1, -1],
-#               [2.4, -1, 0.0, 1.1], [2.0, .2, 1.8, 0.0]])
-# clustering = AgglomerativeClustering().fit_predict(X)
-# print("clustering fit predict:")
-# print(clustering)
+X = np.array([[0.0, 2.1, 1.3, 3.2], [1.1, 0.0, 0.1, -1],
+              [2.4, -1, 0.0, 1.1], [2.0, .2, 1.8, 0.0]])
+clustering = AgglomerativeClustering().fit_predict(X)
+print("clustering fit predict:")
+print(clustering)
 
 
 def k_means(num_clusters, features):
@@ -148,11 +149,12 @@ conn.close()
 # cluster = MiniBatchKMeans(n_clusters = num_clusters[i])
 #               cluster_labels = cluster.fit_predict(data)
 #                silhouette_avg = metrics.silhouette_score(data,cluster_labels) #May want to do sampling here
-
-clustering = AgglomerativeClustering(
-    affinity='precomputed', n_clusters=4).fit(distMatrix)
 X = np.array(distMatrix)
+clustering = AgglomerativeClustering(affinity='precomputed', linkage='single', n_clusters=4).fit(
+    X)
+
 cluster_labels = clustering.fit_predict(X)
-silhouette_avg = metrics.silhouette_score(distMatrix, cluster_labels)
+print(cluster_labels)
+silhouette_avg = metrics.silhouette_score(X, cluster_labels)
 print("Sil avg: ")
 print(silhouette_avg)
