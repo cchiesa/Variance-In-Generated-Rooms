@@ -83,6 +83,7 @@ def getAnswer(room1, room2, conn):
             sum = sum + 0
     
     #return avg of 'distance'
+    #returns float
     return sum/count
 
 
@@ -91,8 +92,28 @@ def getAnswer(room1, room2, conn):
 
 
 conn = sqlite3.connect('websiteDatabase.db')
-getAnswer("CustomBathroom1.2580f005.jpg","CustomBathroom2.b78c9823.jpg", conn)
+#get lsit of all images
+c = conn.cursor()
+#get firstIMages
+firsts = []
+seconds = []
+for row in c.execute("select distinct firstImage from Answer"):
+    firsts.append(row)
+    #print(row)
+#get second
+for row in c.execute("select distinct firstImage from Answer"):
+    seconds.append(row)
 
+imgs = firsts + seconds
+imgs = list(dict.fromkeys(imgs))
+
+j = 0
+for i in imgs:
+    j += 1
+    print(j)
+    print(i)
+
+test = getAnswer("CustomBathroom1.2580f005.jpg","CustomBathroom2.b78c9823.jpg", conn)
 #main
 
 #get list of rooms
