@@ -1,14 +1,14 @@
 import sqlite3
-import numpy as np
-from sklearn.cluster import AgglomerativeClustering
-from sklearn.metrics import silhouette_score
+#import numpy as np
+#from sklearn.cluster import AgglomerativeClustering
+#from sklearn.metrics import silhouette_score
 
 
-X = np.array([[0.0, 2.1, 1.3, 3.2], [1.1, 0.0, 0.1, -1],
-              [2.4, -1, 0.0, 1.1], [2.0, .2, 1.8, 0.0]])
-clustering = AgglomerativeClustering().fit_predict(X)
-print("clustering fit predict:")
-print(clustering)
+#X = np.array([[0.0, 2.1, 1.3, 3.2], [1.1, 0.0, 0.1, -1],
+    #          [2.4, -1, 0.0, 1.1], [2.0, .2, 1.8, 0.0]])
+#clustering = AgglomerativeClustering().fit_predict(X)
+#print("clustering fit predict:")
+#print(clustering)
 
  
 def k_means(num_clusters, features):
@@ -90,12 +90,13 @@ def getAnswer(room1, room2, conn):
     #print("TEST sql")
     # print(c.rowcount)
     if(count == 0):
-        return -1
+       # return -1
+       return count
 
     # return avg of 'distance'
     # returns float
-    return sum/count
-
+    #return sum/count
+    return count
 
 conn = sqlite3.connect('websiteDatabase.db')
 # get lsit of all images
@@ -103,25 +104,26 @@ c = conn.cursor()
 # get firstIMages
 firsts = []
 seconds = []
-for row in c.execute("select distinct firstImage from Answer"):
-    firsts.append(row)
+#for row in c.execute("select distinct firstImage from Answer"):
+   # firsts.append(row)
     # print(row)
 # get second
-for row in c.execute("select distinct secondImage from Answer"):
-    seconds.append(row)
+#for row in c.execute("select distinct secondImage from Answer"):
+    #seconds.append(row)
 
-temp = firsts + seconds
-# print(temp)
-temp = list(dict.fromkeys(temp))
-# print(temp)
 
-j = 0
 imgs = []
-for i in temp:
-    j += 1
-   # print(j)
-    imgs.append(''.join(i))
+for  row in c.execute("SELECT DISTINCT firstImage,secondImage from answer WHERE (firstImage LIKE '%room1.%' OR firstImage LIKE '%room2.%'OR firstImage LIKE '%room3.%'OR firstImage LIKE '%room4.%'OR firstImage LIKE '%room5.%') AND (secondImage LIKE '%room1.%' OR secondImage LIKE '%room2.%' OR secondImage LIKE '%room3.%' OR secondImage LIKE '%room4.%' OR secondImage LIKE '%room5.%')"):
+    print(row)
+    imgs.append(''.join(row[0]))
+    imgs.append(''.join(row[1]))
+print(imgs)
 
+
+# print(temp)
+imgs = list(dict.fromkeys(imgs))
+# print(temp)
+print(len(imgs))
 # create distance metric
 
 distMatrix = []
@@ -136,6 +138,7 @@ for img in imgs:
     distMatrix.append(listDist)
 
 print(distMatrix[0])
+print(distMatrix)
 
 #test = getAnswer("CustomBathroom1.2580f005.jpg","CustomBathroom2.b78c9823.jpg", conn)
 # main
@@ -153,8 +156,8 @@ X = np.array(distMatrix)
 clustering = AgglomerativeClustering(affinity='precomputed', linkage='single', n_clusters=4).fit(
     X)
 
-cluster_labels = clustering.fit_predict(X)
-print(cluster_labels)
-silhouette_avg = metrics.silhouette_score(X, cluster_labels)
-print("Sil avg: ")
-print(silhouette_avg)
+#cluster_labels = clustering.fit_predict(X)
+#print(cluster_labels)
+#silhouette_avg = metrics.silhouette_score(X, cluster_labels)
+#print("Sil avg: ")
+#print(silhouette_avg)
