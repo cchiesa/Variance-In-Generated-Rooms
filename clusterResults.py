@@ -81,7 +81,9 @@ def getAnswer(room1, room2, conn):
         elif(row[0] == 'extremelySimilar'):
             count += 1
             sum = sum + 0
-        
+    
+    #return avg of 'distance'
+    return sum/count
 
 
         
