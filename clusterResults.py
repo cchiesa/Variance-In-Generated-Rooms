@@ -2,11 +2,12 @@ import sqlite3
 import numpy as np
 from sklearn.cluster import AgglomerativeClustering
 
-X = np.array([[0.0, 2.1, 1.3, 3.2], [1.1, 0.0, 0.1, -1],
-              [2.4, -1, 0.0, 1.1], [2.0, .2, 1.8, 0.0]])
-clustering = AgglomerativeClustering().fit_predict(X)
-print("clustering fit predict:")
-print(clustering)
+
+# X = np.array([[0.0, 2.1, 1.3, 3.2], [1.1, 0.0, 0.1, -1],
+#               [2.4, -1, 0.0, 1.1], [2.0, .2, 1.8, 0.0]])
+# clustering = AgglomerativeClustering().fit_predict(X)
+# print("clustering fit predict:")
+# print(clustering)
 
 
 def k_means(num_clusters, features):
@@ -68,13 +69,8 @@ def getAnswer(room1, room2, conn):
     # find avg answer for room 1 and 2
     count = 0
     sum = 0
-<<<<<<< HEAD
     for row in c.execute("select answer from Answer where (firstImage=? and secondImage=?) or (secondImage=? and firstImage=?)", (room1, room2, room1, room2)):
-        print(row)
-=======
-    for row in c.execute("select answer from Answer where (firstImage=? and secondImage=?) or (secondImage=? and firstImage=?)",(room1,room2,room1,room2)):
-        #print(row)
->>>>>>> 80a3deb1a3a2bc7bc37be76eb8ceba1465db2337
+        # print(row)
         # 3 is extrDis, 2 diss, 1 sim, 0 extrSimm
         if(row[0] == 'extremelyDissimilar'):
             # print(3)
@@ -90,18 +86,10 @@ def getAnswer(room1, room2, conn):
         elif(row[0] == 'extremelySimilar'):
             count += 1
             sum = sum + 0
-<<<<<<< HEAD
-=======
     #print("TEST sql")
-    #print(c.rowcount)
-    if(count == 0 ):
+    # print(c.rowcount)
+    if(count == 0):
         return -1
-    
-    #return avg of 'distance'
-    #returns float
-    return sum/count
-
->>>>>>> 80a3deb1a3a2bc7bc37be76eb8ceba1465db2337
 
     # return avg of 'distance'
     # returns float
@@ -118,11 +106,13 @@ for row in c.execute("select distinct firstImage from Answer"):
     firsts.append(row)
     # print(row)
 # get second
-for row in c.execute("select distinct firstImage from Answer"):
+for row in c.execute("select distinct secondImage from Answer"):
     seconds.append(row)
 
 temp = firsts + seconds
+# print(temp)
 temp = list(dict.fromkeys(temp))
+# print(temp)
 
 j = 0
 imgs = []
@@ -131,29 +121,23 @@ for i in temp:
    # print(j)
     imgs.append(''.join(i))
 
-<<<<<<< HEAD
-test = getAnswer("CustomBathroom1.2580f005.jpg",
-                 "CustomBathroom2.b78c9823.jpg", conn)
-# main
-=======
-#create distance metric
+# create distance metric
 
 distMatrix = []
 
 for img in imgs:
-    #compare to all others images
+    # compare to all others images
     listDist = []
     for img2 in imgs:
-        dist = getAnswer(img,img2,conn)
+        dist = getAnswer(img, img2, conn)
         listDist.append(dist)
-    #append to distMatrix
+    # append to distMatrix
     distMatrix.append(listDist)
 
 print(distMatrix[0])
 
 #test = getAnswer("CustomBathroom1.2580f005.jpg","CustomBathroom2.b78c9823.jpg", conn)
-#main
->>>>>>> 80a3deb1a3a2bc7bc37be76eb8ceba1465db2337
+# main
 
 # get list of rooms
 # fstI
@@ -164,3 +148,11 @@ conn.close()
 # cluster = MiniBatchKMeans(n_clusters = num_clusters[i])
 #               cluster_labels = cluster.fit_predict(data)
 #                silhouette_avg = metrics.silhouette_score(data,cluster_labels) #May want to do sampling here
+
+clustering = AgglomerativeClustering(
+    affinity='precomputed', n_clusters=4).fit(distMatrix)
+X = np.array(distMatrix)
+cluster_labels = clustering.fit_predict(X)
+silhouette_avg = metrics.silhouette_score(distMatrix, cluster_labels)
+print("Sil avg: ")
+print(silhouette_avg)
