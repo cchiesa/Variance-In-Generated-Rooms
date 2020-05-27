@@ -10,7 +10,7 @@ clustering = AgglomerativeClustering().fit_predict(X)
 print("clustering fit predict:")
 print(clustering)
 
-
+ 
 def k_means(num_clusters, features):
     # get starting centers randomly
     center = []
