@@ -65,7 +65,7 @@ def getAnswer(room1, room2, conn):
     count = 0
     sum = 0
     for row in c.execute("select answer from Answer where (firstImage=? and secondImage=?) or (secondImage=? and firstImage=?)",(room1,room2,room1,room2)):
-        print(row)
+        #print(row)
         # 3 is extrDis, 2 diss, 1 sim, 0 extrSimm
         if(row[0] == 'extremelyDissimilar'):
             #print(3)
@@ -81,6 +81,10 @@ def getAnswer(room1, room2, conn):
         elif(row[0] == 'extremelySimilar'):
             count += 1
             sum = sum + 0
+    #print("TEST sql")
+    #print(c.rowcount)
+    if(count == 0 ):
+        return -1
     
     #return avg of 'distance'
     #returns float
@@ -104,16 +108,32 @@ for row in c.execute("select distinct firstImage from Answer"):
 for row in c.execute("select distinct firstImage from Answer"):
     seconds.append(row)
 
-imgs = firsts + seconds
-imgs = list(dict.fromkeys(imgs))
+temp = firsts + seconds
+temp = list(dict.fromkeys(temp))
 
 j = 0
-for i in imgs:
+imgs = []
+for i in temp:
     j += 1
-    print(j)
-    print(i)
+   # print(j)
+    imgs.append(''.join(i))
 
-test = getAnswer("CustomBathroom1.2580f005.jpg","CustomBathroom2.b78c9823.jpg", conn)
+#create distance metric
+
+distMatrix = []
+
+for img in imgs:
+    #compare to all others images
+    listDist = []
+    for img2 in imgs:
+        dist = getAnswer(img,img2,conn)
+        listDist.append(dist)
+    #append to distMatrix
+    distMatrix.append(listDist)
+
+print(distMatrix)
+
+#test = getAnswer("CustomBathroom1.2580f005.jpg","CustomBathroom2.b78c9823.jpg", conn)
 #main
 
 #get list of rooms
