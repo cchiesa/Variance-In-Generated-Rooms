@@ -118,9 +118,10 @@ print(sceneSeerRooms)
 print(len(sceneSeerRooms))
 
 row_list = []
-
-bedrooms.insert(0, '')
-row_list.append(bedrooms)
+# bedrooms to baths
+bedTitle = bedrooms.copy()
+bedTitle.insert(0, '')
+row_list.append(bedTitle)
 for bathroom in bathrooms:
     temp = []
     temp.append(bathroom)
@@ -128,6 +129,82 @@ for bathroom in bathrooms:
         temp.append(getAnswer(bedroom, bathroom, conn))
     row_list.append(temp)
 # print(row_list)
+
+row_list.append([""])
+row_list.append([""])
+
+# bathrooms to bathroooms
+bathTitle = bathrooms.copy()
+bathTitle.insert(0, '')
+row_list.append(bathTitle)
+for bathroom in bathrooms:
+    temp = []
+    temp.append(bathroom)
+    for bathroom1 in bathrooms:
+        temp.append(getAnswer(bathroom1, bathroom, conn))
+    row_list.append(temp)
+# print(row_list)
+
+row_list.append([""])
+row_list.append([""])
+
+# bath to living
+lTitle = livingrooms.copy()
+lTitle.insert(0, '')
+row_list.append(lTitle)
+for bathroom in bathrooms:
+    temp = []
+    temp.append(bathroom)
+    for lroom in livingrooms:
+        temp.append(getAnswer(lroom, bathroom, conn))
+    row_list.append(temp)
+# print(row_list)
+
+row_list.append([""])
+row_list.append([""])
+
+#bed - bed
+
+
+row_list.append(bedTitle)
+for bedroom in bedrooms:
+    temp = []
+    temp.append(bathroom)
+    for bedroom1 in bedrooms:
+        temp.append(getAnswer(bedroom, bedroom1, conn))
+    row_list.append(temp)
+# print(row_list)
+row_list.append([""])
+row_list.append([""])
+
+
+# living-bed
+
+
+row_list.append(bedTitle)
+for lroom in livingrooms:
+    temp = []
+    temp.append(lroom)
+    for bedroom in bedrooms:
+        temp.append(getAnswer(bedroom, lroom, conn))
+    row_list.append(temp)
+# print(row_list)
+
+
+row_list.append([""])
+row_list.append([""])
+
+#living - living
+
+row_list.append(lTitle)
+for lroom in livingrooms:
+    temp = []
+    temp.append(lroom)
+    for livingroom in livingrooms:
+        temp.append(getAnswer(livingroom, lroom, conn))
+    row_list.append(temp)
+# print(row_list)
+
 
 row_list.append([""])
 row_list.append([""])
