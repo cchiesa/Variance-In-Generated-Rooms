@@ -54,3 +54,42 @@ bathrooms = list(dict.fromkeys(bathrooms))
 print(bathrooms)
 
 livingrooms = []
+
+customRooms = []
+for row in c.execute("SELECT DISTINCT firstImage from answer WHERE firstImage LIKE '%Custom%'"):
+   # print(row)
+    customRooms.append(''.join(row[0]))
+
+for row in c.execute("SELECT DISTINCT secondImage from answer WHERE secondImage LIKE '%Custom%'"):
+    # print(row)
+    customRooms.append(''.join(row[0]))
+
+customRooms = list(dict.fromkeys(customRooms))
+print(customRooms)
+print(len(customRooms))
+
+kermaniRooms = []
+for row in c.execute("SELECT DISTINCT firstImage from answer WHERE firstImage LIKE '%Kermani%'"):
+   # print(row)
+    kermaniRooms.append(''.join(row[0]))
+
+for row in c.execute("SELECT DISTINCT secondImage from answer WHERE secondImage LIKE '%Kermani%'"):
+    # print(row)
+    kermaniRooms.append(''.join(row[0]))
+
+kermaniRooms = list(dict.fromkeys(kermaniRooms))
+print(kermaniRooms)
+print(len(kermaniRooms))
+
+sceneSeerRooms = []
+for row in c.execute("SELECT DISTINCT firstImage from answer WHERE firstImage LIKE '%SceneSeer%'"):
+   # print(row)
+    sceneSeerRooms.append(''.join(row[0]))
+
+for row in c.execute("SELECT DISTINCT secondImage from answer WHERE secondImage LIKE '%SceneSeer%'"):
+    # print(row)
+    sceneSeerRooms.append(''.join(row[0]))
+
+sceneSeerRooms = list(dict.fromkeys(sceneSeerRooms))
+print(sceneSeerRooms)
+print(len(sceneSeerRooms))
