@@ -40,7 +40,7 @@ conn = sqlite3.connect('websiteDatabase.db')
 # get lsit of all images
 c = conn.cursor()
 # get firstIMages
-
+# bathrooms
 bathrooms = []
 for row in c.execute("SELECT DISTINCT firstImage from answer WHERE firstImage LIKE '%Bathroom%'"):
    # print(row)
@@ -53,4 +53,27 @@ for row in c.execute("SELECT DISTINCT secondImage from answer WHERE secondImage 
 bathrooms = list(dict.fromkeys(bathrooms))
 print(bathrooms)
 
+# livingrooms
 livingrooms = []
+
+for row in c.execute("SELECT DISTINCT firstImage from answer WHERE firstImage LIKE '%LivingRoom%'"):
+    # print(row)
+    livingrooms.append(''.join(row[0]))
+
+for row in c.execute("SELECT DISTINCT secondImage from answer WHERE secondImage LIKE '%LivingRoom%'"):
+    # print(row)
+    livingrooms.append(''.join(row[0]))
+
+livingrooms = list(dict.fromkeys(livingrooms))
+
+# bedrooms
+bedrooms = []
+for row in c.execute("SELECT DISTINCT firstImage from answer WHERE firstImage LIKE '%Bedroom%'"):
+    # print(row)
+    bedrooms.append(''.join(row[0]))
+
+for row in c.execute("SELECT DISTINCT secondImage from answer WHERE secondImage LIKE '%Bedroom%'"):
+    # print(row)
+    bedrooms.append(''.join(row[0]))
+
+bedrooms = list(dict.fromkeys(bedrooms))
