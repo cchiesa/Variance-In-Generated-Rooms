@@ -27,13 +27,13 @@ def getAnswer(room1, room2, conn):
     # print("TEST sql")
     # print(c.rowcount)
     if(count == 0):
-         return -1
-       #return count
+        return -1
+      # return count
 
     # return avg of 'distance'
     # returns float
     return sum/count
-    #return count
+    # return count
 
 
 conn = sqlite3.connect('websiteDatabase.db')
@@ -42,9 +42,15 @@ c = conn.cursor()
 # get firstIMages
 
 bathrooms = []
-for row in c.execute("SELECT DISTINCT firstImage,secondImage from answer WHERE firstImage LIKE '%Bathroom%'"):
-    print(row)
+for row in c.execute("SELECT DISTINCT firstImage from answer WHERE firstImage LIKE '%Bathroom%'"):
+   # print(row)
     bathrooms.append(''.join(row[0]))
-    bathrooms.append(''.join(row[1]))
 
-print(bathrooms[0])
+for row in c.execute("SELECT DISTINCT secondImage from answer WHERE secondImage LIKE '%Bathroom%'"):
+    # print(row)
+    bathrooms.append(''.join(row[0]))
+
+bathrooms = list(dict.fromkeys(bathrooms))
+print(bathrooms)
+
+livingrooms = []
