@@ -1,3 +1,4 @@
+import csv
 import sqlite3
 import numpy as np
 
@@ -116,10 +117,15 @@ sceneSeerRooms = list(dict.fromkeys(sceneSeerRooms))
 print(sceneSeerRooms)
 print(len(sceneSeerRooms))
 
-answers = []
-for bedroom in bathrooms:
+row_list = []
+row_list.append(bedrooms)
+for bathroom in bathrooms:
     temp = []
-    for bathroom in bathrooms:
+    temp.append(bathroom)
+    for bedroom in bedrooms:
         temp.append(getAnswer(bedroom, bathroom, conn))
-    answers.append(temp)
-print(answers)
+    row_list.append(temp)
+print(row_list)
+with open('results.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerows(row_list)
