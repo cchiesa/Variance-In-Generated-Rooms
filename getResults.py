@@ -47,4 +47,22 @@ for row in c.execute("SELECT DISTINCT firstImage,secondImage from answer WHERE f
     bathrooms.append(''.join(row[0]))
     bathrooms.append(''.join(row[1]))
 
-print(bathrooms[0])
+customRooms = []
+for row in c.execute("SELECT DISTINCT firstImage,secondImage from answer WHERE firstImage LIKE '%Custom%'"):
+    print(row)
+    customRooms.append(''.join(row[0]))
+    customRooms.append(''.join(row[1]))
+
+kermaniRooms = []
+for row in c.execute("SELECT DISTINCT firstImage,secondImage from answer WHERE firstImage LIKE '%Kermani%'"):
+    print(row)
+    kermaniRooms.append(''.join(row[0]))
+    kermaniRooms.append(''.join(row[1]))
+
+sceneSeerRooms = []
+for row in c.execute("SELECT DISTINCT firstImage,secondImage from answer WHERE firstImage LIKE '%SceneSeer%'"):
+    print(row)
+    sceneSeerRooms.append(''.join(row[0]))
+    sceneSeerRooms.append(''.join(row[1]))
+
+print(bathrooms)
