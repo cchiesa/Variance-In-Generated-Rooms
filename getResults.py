@@ -118,6 +118,8 @@ print(sceneSeerRooms)
 print(len(sceneSeerRooms))
 
 row_list = []
+
+bedrooms.insert(0, '')
 row_list.append(bedrooms)
 for bathroom in bathrooms:
     temp = []
@@ -125,7 +127,12 @@ for bathroom in bathrooms:
     for bedroom in bedrooms:
         temp.append(getAnswer(bedroom, bathroom, conn))
     row_list.append(temp)
-print(row_list)
+# print(row_list)
+
+row_list.append([""])
+row_list.append([""])
+
+
 with open('results.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerows(row_list)
