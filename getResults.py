@@ -115,3 +115,11 @@ for row in c.execute("SELECT DISTINCT secondImage from answer WHERE secondImage 
 sceneSeerRooms = list(dict.fromkeys(sceneSeerRooms))
 print(sceneSeerRooms)
 print(len(sceneSeerRooms))
+
+answers = []
+for bedroom in bathrooms:
+    temp = []
+    for bathroom in bathrooms:
+        temp.append(getAnswer(bedroom, bathroom, conn))
+    answers.append(temp)
+print(answers)
