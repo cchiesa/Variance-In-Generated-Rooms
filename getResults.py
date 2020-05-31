@@ -40,40 +40,12 @@ conn = sqlite3.connect('websiteDatabase.db')
 # get lsit of all images
 c = conn.cursor()
 # get firstIMages
-firsts = []
-seconds = []
-#for row in c.execute("select distinct firstImage from Answer"):
-   # firsts.append(row)
-    # print(row)
-# get second
 
-imgs = []
+bathrooms = []
+for row in c.execute("SELECT DISTINCT firstImage,secondImage from answer WHERE firstImage LIKE '%Bathroom%'"):
+    bathrooms.append(row)
+    print(row)
+    bathrooms.append(''.join(row[0]))
+    bathrooms.append(''.join(row[1]))
 
-for row in c.execute("select distinct secondImage from Answer"):
-    #seconds.append(row)
-
-
-
-
-
-
-
-# print(temp)
-imgs = list(dict.fromkeys(imgs))
-print(imgs)
-
-
-# print(temp)
-print(len(imgs))
-# create distance metric
-
-distMatrix = []
-
-for img in imgs:
-    # compare to all others images
-    listDist = []
-    for img2 in imgs:
-        dist = getAnswer(img, img2, conn)
-        listDist.append(dist)
-    # append to distMatrix
-    distMatrix.append(listDist)
+print(bathrooms)
