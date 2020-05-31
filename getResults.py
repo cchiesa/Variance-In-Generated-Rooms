@@ -210,6 +210,92 @@ row_list.append([""])
 row_list.append([""])
 
 
+# Below are the comparisons by generator
+customRoomsColumnTitles = customRooms.copy()
+customRoomsColumnTitles.insert(0, '')
+kermaniRoomsColumnTitles = kermaniRooms.copy()
+kermaniRoomsColumnTitles.insert(0, '')
+sceneSeerRoomsColumnTitles = sceneSeerRooms.copy()
+sceneSeerRoomsColumnTitles.insert(0, '')
+
+# custom to custom
+row_list.append(customRoomsColumnTitles)
+for customRoom in customRooms:
+    temp = []
+    temp.append(customRoom)
+    for customRoom2 in customRooms:
+        temp.append(getAnswer(customRoom, customRoom2, conn))
+    row_list.append(temp)
+# print(row_list)
+
+row_list.append([""])
+row_list.append([""])
+
+# kermani to kermani
+row_list.append(kermaniRoomsColumnTitles)
+for kermaniRoom in kermaniRooms:
+    temp = []
+    temp.append(kermaniRoom)
+    for kermaniRoom2 in kermaniRooms:
+        temp.append(getAnswer(kermaniRoom, kermaniRoom2, conn))
+    row_list.append(temp)
+# print(row_list)
+
+row_list.append([""])
+row_list.append([""])
+
+# sceneseer to sceneseer
+row_list.append(sceneSeerRoomsColumnTitles)
+for sceneSeerRoom in sceneSeerRooms:
+    temp = []
+    temp.append(sceneSeerRoom)
+    for sceneSeerRoom2 in sceneSeerRooms:
+        temp.append(getAnswer(sceneSeerRoom, sceneSeerRoom2, conn))
+    row_list.append(temp)
+# print(row_list)
+
+row_list.append([""])
+row_list.append([""])
+
+# custom to kermani
+row_list.append(customRoomsColumnTitles)
+for kermaniRoom in kermaniRooms:
+    temp = []
+    temp.append(kermaniRoom)
+    for customRoom in customRooms:
+        temp.append(getAnswer(customRoom, kermaniRoom, conn))
+    row_list.append(temp)
+# print(row_list)
+
+row_list.append([""])
+row_list.append([""])
+
+# kermani to sceneseer
+row_list.append(kermaniRoomsColumnTitles)
+for sceneSeerRoom in sceneSeerRooms:
+    temp = []
+    temp.append(sceneSeerRoom)
+    for kermaniRoom in kermaniRooms:
+        temp.append(getAnswer(kermaniRoom, sceneSeerRoom, conn))
+    row_list.append(temp)
+# print(row_list)
+
+row_list.append([""])
+row_list.append([""])
+
+# sceneseer to custom
+row_list.append(sceneSeerRoomsColumnTitles)
+for customRoom in customRooms:
+    temp = []
+    temp.append(customRoom)
+    for sceneSeerRoom in sceneSeerRooms:
+        temp.append(getAnswer(sceneSeerRoom, customRoom, conn))
+    row_list.append(temp)
+# print(row_list)
+
+row_list.append([""])
+row_list.append([""])
+
 with open('results.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerows(row_list)
