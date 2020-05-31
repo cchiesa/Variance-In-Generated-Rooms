@@ -1,11 +1,11 @@
 import sqlite3
-#import numpy as np
-#from sklearn.cluster import AgglomerativeClustering
-#from sklearn.metrics import silhouette_score
+import numpy as np
+from sklearn.cluster import AgglomerativeClustering
+from sklearn.metrics import silhouette_score
 
 
 X = np.array([[0.0, 2.1, 1.3, 3.2], [1.1, 0.0, 0.1, -1],
-              [2.4, -1, 0.0, 1.1], [2.0, .2, 1.8, 0.0]])
+            [2.4, -1, 0.0, 1.1], [2.0, .2, 1.8, 0.0]])
 clustering = AgglomerativeClustering(
     affinity='precomputed', linkage='single', n_clusters=3).fit_predict(X)
 print("clustering fit predict:")
@@ -118,11 +118,14 @@ for  row in c.execute("SELECT DISTINCT firstImage,secondImage from answer WHERE 
     print(row)
     imgs.append(''.join(row[0]))
     imgs.append(''.join(row[1]))
-print(imgs)
+
 
 
 # print(temp)
 imgs = list(dict.fromkeys(imgs))
+print(imgs)
+
+
 # print(temp)
 print(len(imgs))
 # create distance metric
@@ -138,7 +141,6 @@ for img in imgs:
     # append to distMatrix
     distMatrix.append(listDist)
 
-print(distMatrix[0])
 print(distMatrix)
 
 # test = getAnswer("CustomBathroom1.2580f005.jpg","CustomBathroom2.b78c9823.jpg", conn)
