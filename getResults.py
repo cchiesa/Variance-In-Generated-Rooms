@@ -43,9 +43,8 @@ c = conn.cursor()
 
 bathrooms = []
 for row in c.execute("SELECT DISTINCT firstImage,secondImage from answer WHERE firstImage LIKE '%Bathroom%'"):
-    bathrooms.append(row)
     print(row)
     bathrooms.append(''.join(row[0]))
     bathrooms.append(''.join(row[1]))
 
-print(bathrooms)
+print(bathrooms[0])
