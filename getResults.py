@@ -1,6 +1,7 @@
 import csv
 import sqlite3
 import numpy as np
+from scipy.cluster.hierarchy import median
 
 
 def getAnswer(room1, room2, conn):
@@ -299,3 +300,4 @@ row_list.append([""])
 with open('results.csv', 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerows(row_list)
+
