@@ -38,8 +38,41 @@ def getList(roomType1,roomType2,writer):
 
 with open('newResults.csv', mode='w') as file:
     writer = csv.writer(file)
+    #bed - bath
     bed_bath = getList('%Bathroom%','%Bedroom%',writer)
-    #print(bed_bath)
-    #print(len(bed_bath))
+    #bath - bath
+    bath_bath = getList('%Bathroom%','%Bathroom%',writer)
+    #bath-living
+    bath_living = getList('%Bathroom%','%LivingRoom%',writer)
+    #bed-bed
+    bed_bed = getList('%Bedroom%','%Bedroom%',writer)
+    #living-bed
+    living_bed = getList('%LivingRoom%','%Bedroom%',writer)
+    #living-lving
+    living_living = getList('%LivingRoom%','%LivingRoom%',writer)
 
-    
+    #generator-generator
+
+    kermani_sceneseer = getList('%Kermani%', '%SceneSeer%', writer)
+
+    sceneseer_custom = getList('%Custom%', '%SceneSeer%', writer)
+
+    custom_kermani = getList('%Kermani%', '%Custom%', writer)
+
+    kermani_kermani = getList('%Kermani%', '%Kermani%', writer)
+
+    sceneseer_sceneseer = getList('%SceneSeer%', '%SceneSeer%', writer)
+
+    custom_custom = getList('%Custom%', '%Custom%', writer)
+
+
+###########anova one way####################
+import scipy.stats as stats
+
+#bed - baths to bed - bed
+s = stats.f_oneway(bed_bath,bed_bed)
+print(s.pvalue)
+#bed-bath to bath-bath
+s1 = stats.f_oneway(bed_bath,bath_bath)
+print(s1.pvalue)
+
