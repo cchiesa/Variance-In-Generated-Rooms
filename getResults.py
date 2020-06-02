@@ -117,7 +117,7 @@ for row in c.execute("SELECT DISTINCT secondImage from answer WHERE secondImage 
 sceneSeerRooms = list(dict.fromkeys(sceneSeerRooms))
 print(sceneSeerRooms)
 print(len(sceneSeerRooms))
-
+#################################comparisons####################
 row_list = []
 # bedrooms to baths
 bedTitle = bedrooms.copy()
