@@ -29,7 +29,7 @@ def getAnswer(room1, room2, conn):
     # print("TEST sql")
     # print(c.rowcount)
     if(count == 0):
-        return -1
+        return ''
       # return count
 
     # return avg of 'distance'
@@ -170,7 +170,7 @@ row_list.append([""])
 row_list.append(bedTitle)
 for bedroom in bedrooms:
     temp = []
-    temp.append(bathroom)
+    temp.append(bedroom)
     for bedroom1 in bedrooms:
         temp.append(getAnswer(bedroom, bedroom1, conn))
     row_list.append(temp)
