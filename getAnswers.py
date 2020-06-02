@@ -21,6 +21,11 @@ def getNum(answer):
 def getList(roomType1,roomType2,writer):
     conn = sqlite3.connect('websiteDatabase.db')
     c = conn.cursor()
+    s = roomType1 + "_" + roomType2
+    s = s.replace('%','')
+    writer.writerow([s])
+    writer.writerow([""])
+    writer.writerow(["room1","room2","answer"])
     rows = []
     room1_room2 = []
     for row in c.execute("SELECT  firstImage,secondImage,Answer from answer \
@@ -30,13 +35,13 @@ def getList(roomType1,roomType2,writer):
         rows.append([row[0],row[1],getNum(row[2])])
         room1_room2.append(getNum(row[2]))
     writer.writerows(rows)
+    #print(rows)
     writer.writerow([""])
     writer.writerow([""])
-    
     return room1_room2
 
 
-with open('newResults.csv', mode='w') as file:
+with open('newResults.csv', mode='w',newline='') as file:
     writer = csv.writer(file)
     #bed - bath
     bed_bath = getList('%Bathroom%','%Bedroom%',writer)
@@ -66,13 +71,5 @@ with open('newResults.csv', mode='w') as file:
     custom_custom = getList('%Custom%', '%Custom%', writer)
 
 
-###########anova one way####################
-import scipy.stats as stats
 
-#bed - baths to bed - bed
-s = stats.f_oneway(bed_bath,bed_bed)
-print(s.pvalue)
-#bed-bath to bath-bath
-s1 = stats.f_oneway(bed_bath,bath_bath)
-print(s1.pvalue)
 
