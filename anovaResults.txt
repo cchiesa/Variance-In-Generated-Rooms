@@ -1,0 +1,84 @@
+Bath-Bed to Bath-Bed pvalue: 1.0
+Bath-Bed to Bath-Bath pvalue: 4.950813330509196e-117
+Bath-Bed to Bath-Living pvalue: 7.858348150436787e-97
+Bath-Bed to Bed-Bed pvalue: 1.3563049100259948e-07
+Bath-Bed to Living-Bed pvalue: 6.055491207291496e-32
+Bath-Bed to Living-Living pvalue: 1.3810247644368383e-86
+
+Bath-Bath to Bath-Bed pvalue: 4.950813330509196e-117
+Bath-Bath to Bath-Bath pvalue: 1.0
+Bath-Bath to Bath-Living pvalue: 2.59045242998717e-05
+Bath-Bath to Bed-Bed pvalue: 7.179116266439762e-79
+Bath-Bath to Living-Bed pvalue: 3.7589172302524146e-39
+Bath-Bath to Living-Living pvalue: 5.2089400246066476e-05
+
+Bath-Living to Bath-Bed pvalue: 7.858348150437457e-97
+Bath-Living to Bath-Bath pvalue: 2.59045242998717e-05
+Bath-Living to Bath-Living pvalue: 1.0
+Bath-Living to Bed-Bed pvalue: 1.0620783454487083e-58
+Bath-Living to Living-Bed pvalue: 9.791531099481452e-23
+Bath-Living to Living-Living pvalue: 0.9570225367040491
+
+Bed-Bed to Bath-Bed pvalue: 1.3563049100259948e-07
+Bed-Bed to Bath-Bath pvalue: 7.17911626644017e-79
+Bed-Bed to Bath-Living pvalue: 1.0620783454487083e-58
+Bed-Bed to Bed-Bed pvalue: 1.0
+Bed-Bed to Living-Bed pvalue: 2.519472944214813e-11
+Bed-Bed to Living-Living pvalue: 1.323528937484872e-52
+
+Living-Bed to Bath-Bed pvalue: 6.055491207291496e-32
+Living-Bed to Bath-Bath pvalue: 3.7589172302524146e-39
+Living-Bed to Bath-Living pvalue: 9.791531099481452e-23
+Living-Bed to Bed-Bed pvalue: 2.519472944214813e-11
+Living-Bed to Living-Bed pvalue: 1.0
+Living-Bed to Living-Living pvalue: 2.390992479909258e-20
+
+Living-Living to Bath-Bed pvalue: 1.3810247644368383e-86
+Living-Living to Bath-Bath pvalue: 5.2089400246066476e-05
+Living-Living to Bath-Living pvalue: 0.9570225367040491
+Living-Living to Bed-Bed pvalue: 1.323528937484872e-52
+Living-Living to Living-Bed pvalue: 2.390992479909156e-20
+Living-Living to Living-Living pvalue: 1.0
+
+Kermani-Scene to Kermani-Scene pvalue: 1.0
+Kermani-Scene to Custom-Scene pvalue: 0.018554578061839293
+Kermani-Scene to Kermani-Custom pvalue: 0.6288016923985418
+Kermani-Scene to Kermani-Kermani pvalue: 0.0001242990303615152
+Kermani-Scene to Scene-Scene pvalue: 0.10529277561446554
+Kermani-Scene to Custom-Custom pvalue: 0.07234514236123438
+
+Custom-Scene to Kermani-Scene pvalue: 0.018554578061839293
+Custom-Scene to Custom-Scene pvalue: nan
+Custom-Scene to Kermani-Custom pvalue: 0.0056942447486990335
+Custom-Scene to Kermani-Kermani pvalue: 0.41777118422036963
+Custom-Scene to Scene-Scene pvalue: 0.22361825727193985
+Custom-Scene to Custom-Custom pvalue: 0.00011559246892608035
+
+Kermani-Custom to Kermani-Scene pvalue: 0.6288016923985418
+Kermani-Custom to Custom-Scene pvalue: 0.0056942447486990335
+Kermani-Custom to Kermani-Custom pvalue: 1.0
+Kermani-Custom to Kermani-Kermani pvalue: 1.5516257273621818e-05
+Kermani-Custom to Scene-Scene pvalue: 0.031034054129049877
+Kermani-Custom to Custom-Custom pvalue: 0.18809537180738123
+
+Kermani-Kermani to Kermani-Scene pvalue: 0.0001242990303615152
+Kermani-Kermani to Custom-Scene pvalue: 0.41777118422036963
+Kermani-Kermani to Kermani-Custom pvalue: 1.5516257273621818e-05
+Kermani-Kermani to Kermani-Kermani pvalue: 1.0
+Kermani-Kermani to Scene-Scene pvalue: 0.005057724458478373
+Kermani-Kermani to Custom-Custom pvalue: 1.64669602506695e-08
+
+Scene-Scene to Kermani-Scene pvalue: 0.10529277561446554
+Scene-Scene to Custom-Scene pvalue: 0.22361825727193985
+Scene-Scene to Kermani-Custom pvalue: 0.031034054129049877
+Scene-Scene to Kermani-Kermani pvalue: 0.005057724458478373
+Scene-Scene to Scene-Scene pvalue: 1.0
+Scene-Scene to Custom-Custom pvalue: 0.00029516516668149327
+
+Custom-Custom to Kermani-Scene pvalue: 0.07234514236123438
+Custom-Custom to Custom-Scene pvalue: 0.00011559246892608035
+Custom-Custom to Kermani-Custom pvalue: 0.18809537180738123
+Custom-Custom to Kermani-Kermani pvalue: 1.64669602506695e-08
+Custom-Custom to Scene-Scene pvalue: 0.00029516516668149327
+Custom-Custom to Custom-Custom pvalue: 1.0
+
