@@ -100,6 +100,9 @@ arrays.append(custom_custom)
 ###########anova one way####################
 import scipy.stats as stats
 from scipy.stats import skew
+from numpy import median
+
+
 with open('anovaResults.txt', mode='w') as f:
 
     
@@ -121,6 +124,7 @@ with open('anovaResults.txt', mode='w') as f:
 
     for i in range(0,6):
         sk = skew(arrays[i])
+        f.write(names[i] + " average : " + str(sum(arrays[i])/len(arrays[i])) + "\n")
         f.write(names[i] + " skew: "+ str(sk) +"\n")
         for j in range(0,6):
             st = stats.f_oneway(arrays[i],arrays[j])
@@ -129,6 +133,9 @@ with open('anovaResults.txt', mode='w') as f:
         f.write("\n")
 
     for i in range(6,12):
+        sk = skew(arrays[i])
+        f.write(names[i] + " average : " + str(sum(arrays[i])/len(arrays[i])) + "\n")
+        f.write(names[i] + " skew: "+ str(sk) +"\n")
         for j in range(6,12):
             s = stats.f_oneway(arrays[i],arrays[j])
             f.write(names[i] + " to " + names[j] + " pvalue: " + str(s.pvalue) +"\n")
