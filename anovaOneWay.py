@@ -123,6 +123,7 @@ with open('anovaResults.txt', mode='w') as f:
     '''
 
     for i in range(0,6):
+        f.write(names[i] + " number of answers: " + str(len(arrays[i])) + "\n")
         sk = skew(arrays[i])
         f.write(names[i] + " average : " + str(sum(arrays[i])/len(arrays[i])) + "\n")
         f.write(names[i] + " skew: "+ str(sk) +"\n")
@@ -133,6 +134,7 @@ with open('anovaResults.txt', mode='w') as f:
         f.write("\n")
 
     for i in range(6,12):
+        f.write(names[i] + " number of answers: " + str(len(arrays[i])) + "\n")
         sk = skew(arrays[i])
         f.write(names[i] + " average : " + str(sum(arrays[i])/len(arrays[i])) + "\n")
         f.write(names[i] + " skew: "+ str(sk) +"\n")

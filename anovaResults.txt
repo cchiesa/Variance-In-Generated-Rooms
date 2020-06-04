@@ -1,3 +1,4 @@
+Bath-Bed number of answers: 378
 Bath-Bed average : 2.708994708994709
 Bath-Bed skew: -2.000009686512777
 Bath-Bed to Bath-Bed pvalue: 1.0
@@ -7,6 +8,7 @@ Bath-Bed to Bed-Bed pvalue: 1.3563049100259948e-07
 Bath-Bed to Living-Bed pvalue: 6.055491207291496e-32
 Bath-Bed to Living-Living pvalue: 1.3810247644368383e-86
 
+Bath-Bath number of answers: 396
 Bath-Bath average : 1.2575757575757576
 Bath-Bath skew: 0.2426126386069681
 Bath-Bath to Bath-Bed pvalue: 4.950813330509196e-117
@@ -16,6 +18,7 @@ Bath-Bath to Bed-Bed pvalue: 7.179116266439762e-79
 Bath-Bath to Living-Bed pvalue: 3.7589172302524146e-39
 Bath-Bath to Living-Living pvalue: 5.2089400246066476e-05
 
+Bath-Living number of answers: 379
 Bath-Living average : 1.5118733509234827
 Bath-Living skew: 0.23358541535428004
 Bath-Living to Bath-Bed pvalue: 7.858348150437457e-97
@@ -25,6 +28,7 @@ Bath-Living to Bed-Bed pvalue: 1.0620783454487083e-58
 Bath-Living to Living-Bed pvalue: 9.791531099481452e-23
 Bath-Living to Living-Living pvalue: 0.9570225367040491
 
+Bed-Bed number of answers: 371
 Bed-Bed average : 2.4690026954177897
 Bed-Bed skew: -1.3184888267297923
 Bed-Bed to Bath-Bed pvalue: 1.3563049100259948e-07
@@ -34,6 +38,7 @@ Bed-Bed to Bed-Bed pvalue: 1.0
 Bed-Bed to Living-Bed pvalue: 2.519472944214813e-11
 Bed-Bed to Living-Living pvalue: 1.323528937484872e-52
 
+Living-Bed number of answers: 360
 Living-Bed average : 2.1
 Living-Bed skew: -0.5594627295983523
 Living-Bed to Bath-Bed pvalue: 6.055491207291496e-32
@@ -43,6 +48,7 @@ Living-Bed to Bed-Bed pvalue: 2.519472944214813e-11
 Living-Bed to Living-Bed pvalue: 1.0
 Living-Bed to Living-Living pvalue: 2.390992479909258e-20
 
+Living-Living number of answers: 363
 Living-Living average : 1.5151515151515151
 Living-Living skew: 0.08159582655029003
 Living-Living to Bath-Bed pvalue: 1.3810247644368383e-86
@@ -52,6 +58,7 @@ Living-Living to Bed-Bed pvalue: 1.323528937484872e-52
 Living-Living to Living-Bed pvalue: 2.390992479909156e-20
 Living-Living to Living-Living pvalue: 1.0
 
+Kermani-Scene number of answers: 301
 Kermani-Scene average : 1.830564784053156
 Kermani-Scene skew: -0.2234335300912822
 Kermani-Scene to Kermani-Scene pvalue: 1.0
@@ -61,6 +68,7 @@ Kermani-Scene to Kermani-Kermani pvalue: 0.0001242990303615152
 Kermani-Scene to Scene-Scene pvalue: 0.10529277561446554
 Kermani-Scene to Custom-Custom pvalue: 0.07234514236123438
 
+Custom-Scene number of answers: 198
 Custom-Scene average : 2.025252525252525
 Custom-Scene skew: -0.46697058250108525
 Custom-Scene to Kermani-Scene pvalue: 0.018554578061839293
@@ -70,6 +78,7 @@ Custom-Scene to Kermani-Kermani pvalue: 0.41777118422036963
 Custom-Scene to Scene-Scene pvalue: 0.22361825727193985
 Custom-Scene to Custom-Custom pvalue: 0.00011559246892608035
 
+Kermani-Custom number of answers: 291
 Kermani-Custom average : 1.7938144329896908
 Kermani-Custom skew: -0.30725931529512224
 Kermani-Custom to Kermani-Scene pvalue: 0.6288016923985418
@@ -79,6 +88,7 @@ Kermani-Custom to Kermani-Kermani pvalue: 1.5516257273621818e-05
 Kermani-Custom to Scene-Scene pvalue: 0.031034054129049877
 Kermani-Custom to Custom-Custom pvalue: 0.18809537180738123
 
+Kermani-Kermani number of answers: 596
 Kermani-Kermani average : 2.087248322147651
 Kermani-Kermani skew: -0.6305010330172345
 Kermani-Kermani to Kermani-Scene pvalue: 0.0001242990303615152
@@ -88,6 +98,7 @@ Kermani-Kermani to Kermani-Kermani pvalue: 1.0
 Kermani-Kermani to Scene-Scene pvalue: 0.005057724458478373
 Kermani-Kermani to Custom-Custom pvalue: 1.64669602506695e-08
 
+Scene-Scene number of answers: 588
 Scene-Scene average : 1.935374149659864
 Scene-Scene skew: -0.36509552440442317
 Scene-Scene to Kermani-Scene pvalue: 0.10529277561446554
@@ -97,6 +108,7 @@ Scene-Scene to Kermani-Kermani pvalue: 0.005057724458478373
 Scene-Scene to Scene-Scene pvalue: 1.0
 Scene-Scene to Custom-Custom pvalue: 0.00029516516668149327
 
+Custom-Custom number of answers: 273
 Custom-Custom average : 1.6886446886446886
 Custom-Custom skew: -0.19939961596493308
 Custom-Custom to Kermani-Scene pvalue: 0.07234514236123438
