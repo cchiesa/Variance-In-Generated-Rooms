@@ -1,3 +1,4 @@
+Bath-Bed skew: -2.000009686512777
 Bath-Bed to Bath-Bed pvalue: 1.0
 Bath-Bed to Bath-Bath pvalue: 4.950813330509196e-117
 Bath-Bed to Bath-Living pvalue: 7.858348150436787e-97
@@ -5,6 +6,7 @@ Bath-Bed to Bed-Bed pvalue: 1.3563049100259948e-07
 Bath-Bed to Living-Bed pvalue: 6.055491207291496e-32
 Bath-Bed to Living-Living pvalue: 1.3810247644368383e-86
 
+Bath-Bath skew: 0.2426126386069681
 Bath-Bath to Bath-Bed pvalue: 4.950813330509196e-117
 Bath-Bath to Bath-Bath pvalue: 1.0
 Bath-Bath to Bath-Living pvalue: 2.59045242998717e-05
@@ -12,6 +14,7 @@ Bath-Bath to Bed-Bed pvalue: 7.179116266439762e-79
 Bath-Bath to Living-Bed pvalue: 3.7589172302524146e-39
 Bath-Bath to Living-Living pvalue: 5.2089400246066476e-05
 
+Bath-Living skew: 0.23358541535428004
 Bath-Living to Bath-Bed pvalue: 7.858348150437457e-97
 Bath-Living to Bath-Bath pvalue: 2.59045242998717e-05
 Bath-Living to Bath-Living pvalue: 1.0
@@ -19,6 +22,7 @@ Bath-Living to Bed-Bed pvalue: 1.0620783454487083e-58
 Bath-Living to Living-Bed pvalue: 9.791531099481452e-23
 Bath-Living to Living-Living pvalue: 0.9570225367040491
 
+Bed-Bed skew: -1.3184888267297923
 Bed-Bed to Bath-Bed pvalue: 1.3563049100259948e-07
 Bed-Bed to Bath-Bath pvalue: 7.17911626644017e-79
 Bed-Bed to Bath-Living pvalue: 1.0620783454487083e-58
@@ -26,6 +30,7 @@ Bed-Bed to Bed-Bed pvalue: 1.0
 Bed-Bed to Living-Bed pvalue: 2.519472944214813e-11
 Bed-Bed to Living-Living pvalue: 1.323528937484872e-52
 
+Living-Bed skew: -0.5594627295983523
 Living-Bed to Bath-Bed pvalue: 6.055491207291496e-32
 Living-Bed to Bath-Bath pvalue: 3.7589172302524146e-39
 Living-Bed to Bath-Living pvalue: 9.791531099481452e-23
@@ -33,6 +38,7 @@ Living-Bed to Bed-Bed pvalue: 2.519472944214813e-11
 Living-Bed to Living-Bed pvalue: 1.0
 Living-Bed to Living-Living pvalue: 2.390992479909258e-20
 
+Living-Living skew: 0.08159582655029003
 Living-Living to Bath-Bed pvalue: 1.3810247644368383e-86
 Living-Living to Bath-Bath pvalue: 5.2089400246066476e-05
 Living-Living to Bath-Living pvalue: 0.9570225367040491
