@@ -1,0 +1,5 @@
+"cabinet","chair","chair_1","chair_2","chair_3","chair_4","chair_5","cupboard","desk","picture","shelf","table","table_1","tissue"
+0,1,1,1,1,1,1,0,1,1,1,0,0,0
+1,1,1,1,1,1,1,0,1,1,0,0,0,0
+0,1,1,1,0,0,0,1,0,0,0,1,0,1
+0,1,1,1,1,1,1,0,0,0,0,1,1,1

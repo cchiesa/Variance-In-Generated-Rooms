@@ -1,0 +1,8 @@
+"bulletin_board","cabinet","cabinet_1","chair","chair_1","container","container_1","counter","door","drawer","dryer","garbage_bin","garbage_bin_1","iron","ironing_board","laundrybasket","sink","table","tray","washing_machine","washing_machine_1","washing_machine_2","washing_machine_3"
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+0,1,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,1,1,0,0,0
+0,1,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0
+0,1,1,0,0,1,0,0,0,1,1,0,0,0,0,1,0,0,0,1,0,0,0
+1,0,0,1,1,0,0,0,0,0,0,0,0,1,1,0,0,1,0,1,1,1,1
+0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1

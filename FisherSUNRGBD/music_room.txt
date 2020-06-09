@@ -1,0 +1,3 @@
+"piano","piano_bench","shelf","sofa_chair"
+1,1,1,0
+0,0,0,1

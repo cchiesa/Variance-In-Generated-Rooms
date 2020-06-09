@@ -1,0 +1,5 @@
+"bed","canister","canister_1","chair","coffee_maker","desk","dresser","ice_bucket","mini_bar","ottoman","sink","suits_case","suits_case_1","tray","tv"
+0,1,1,0,1,0,0,1,1,0,0,0,0,1,0
+0,0,0,0,0,0,0,0,0,1,0,1,1,0,0
+0,0,0,1,0,1,1,0,0,0,0,0,0,0,1
+1,0,0,1,0,1,1,0,0,0,1,0,0,0,0

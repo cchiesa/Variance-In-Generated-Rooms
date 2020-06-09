@@ -1,0 +1,4 @@
+"bicycle","box","chessset","desk","drawer","drawer_1","guitar","painting","piano","pianobench","pillow","pillow_1","plants","rack","sofa_chair","workoutequipment","workoutequipment_1","workoutequipment_2","workoutequipment_3"
+0,0,1,0,0,0,0,0,0,0,1,0,0,0,1,1,1,0,0
+0,1,0,1,1,1,0,0,0,0,0,0,0,1,0,1,1,1,1
+1,1,0,0,1,0,1,1,1,1,1,1,1,0,1,0,0,0,0
