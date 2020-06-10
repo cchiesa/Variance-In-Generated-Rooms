@@ -1,0 +1,40 @@
+{
+"vertices":[
+{"id":"0","name":"paper","Leaves":[{"name":"money","frequency":1 },{"name":"motherlode","frequency":1 }],"frequency":0.9995},
+{"id":"1","name":"stove_burner","Leaves":[],"frequency":0.666667},
+{"id":"2","name":"bag","Leaves":[],"frequency":0.333333},
+{"id":"3","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"4","name":"wall","Leaves":[],"frequency":0.666667},
+{"id":"5","name":"table","Leaves":[{"name":"table","frequency":0.861538 }],"frequency":0.666667},
+{"id":"6","name":"picture","Leaves":[],"frequency":0.666667},
+{"id":"7","name":"floor","Leaves":[],"frequency":0.666667},
+{"id":"8","name":"paper_towel_dispenser","Leaves":[],"frequency":0.666667},
+{"id":"9","name":"printer","Leaves":[{"name":"printer","frequency":0.772413 }],"frequency":0.666667},
+{"id":"10","name":"cabinet","Leaves":[],"frequency":0.9995},
+{"id":"11","name":"counter","Leaves":[],"frequency":0.333333},
+{"id":"12","name":"microwave","Leaves":[],"frequency":0.666667},
+{"id":"13","name":"refridgerator","Leaves":[],"frequency":0.666667},
+{"id":"14","name":"pot","Leaves":[],"frequency":0.666667}
+],
+"rules":[
+{"id":"0","source":"5","target":"9","factor":"orientation_parallel"},
+{"id":"1","source":"2","target":"0","factor":"vertical-support"},
+{"id":"2","source":"7","target":"8","factor":"vertical-support"},
+{"id":"3","source":"10","target":"14","factor":"vertical-support"},
+{"id":"4","source":"13","target":"6","factor":"vertical-support"},
+{"id":"5","source":"10","target":"11","factor":"vertical-support"},
+{"id":"6","source":"11","target":"1","factor":"vertical-support"},
+{"id":"7","source":"3","target":"2","factor":"support"},
+{"id":"8","source":"12","target":"4","factor":"horizontal-support"}
+],
+"probability":[
+{"id":"0","value":0.392857},
+{"id":"1","value":0.333333},
+{"id":"2","value":0.666667},
+{"id":"3","value":0.333333},
+{"id":"4","value":0.333333},
+{"id":"5","value":0.666667},
+{"id":"6","value":0.666667},
+{"id":"7","value":0.333333},
+{"id":"8","value":0.333333}
+]}

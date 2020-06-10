@@ -1,0 +1,40 @@
+{
+"vertices":[
+{"id":"0","name":"wall","Leaves":[{"name":"wall","frequency":0.526316 }],"frequency":0.37037},
+{"id":"1","name":"table","Leaves":[{"name":"table","frequency":0.813699 }],"frequency":0.647059},
+{"id":"2","name":"counter","Leaves":[],"frequency":0.185185},
+{"id":"3","name":"sofa","Leaves":[],"frequency":0.185185},
+{"id":"4","name":"plate","Leaves":[{"name":"plate","frequency":0.384615 }],"frequency":0.185185}
+],
+"rules":[
+{"id":"0","source":"4","target":"4","factor":"proximity"},
+{"id":"1","source":"0","target":"0","factor":"proximity"},
+{"id":"2","source":"3","target":"0","factor":"proximity"},
+{"id":"3","source":"3","target":"1","factor":"proximity"},
+{"id":"4","source":"2","target":"4","factor":"proximity"},
+{"id":"5","source":"4","target":"1","factor":"proximity"},
+{"id":"6","source":"4","target":"4","factor":"orientation_parallel"},
+{"id":"7","source":"0","target":"0","factor":"orientation_parallel"},
+{"id":"8","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"9","source":"0","target":"1","factor":"orientation_parallel"},
+{"id":"10","source":"1","target":"0","factor":"orientation_parallel"},
+{"id":"11","source":"0","target":"3","factor":"orientation_parallel"},
+{"id":"12","source":"1","target":"3","factor":"orientation_parallel"},
+{"id":"13","source":"4","target":"4","factor":"symmetry"}
+],
+"probability":[
+{"id":"0","value":0.185185},
+{"id":"1","value":0.111111},
+{"id":"2","value":0.0740741},
+{"id":"3","value":0.0740741},
+{"id":"4","value":0.0740741},
+{"id":"5","value":0.0740741},
+{"id":"6","value":0.185185},
+{"id":"7","value":0.222222},
+{"id":"8","value":0.148148},
+{"id":"9","value":0.259259},
+{"id":"10","value":0.111111},
+{"id":"11","value":0.185185},
+{"id":"12","value":0.185185},
+{"id":"13","value":0.0740741}
+]}

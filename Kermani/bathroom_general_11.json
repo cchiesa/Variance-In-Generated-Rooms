@@ -1,0 +1,44 @@
+{
+"vertices":[
+{"id":"0","name":"wall","Leaves":[{"name":"wall","frequency":0.716433 }],"frequency":0.619835},
+{"id":"1","name":"sink","Leaves":[{"name":"sink","frequency":0.7364 }],"frequency":0.528926},
+{"id":"2","name":"toilet","Leaves":[],"frequency":0.536},
+{"id":"3","name":"floor","Leaves":[],"frequency":0.669421},
+{"id":"4","name":"counter","Leaves":[],"frequency":0.46281},
+{"id":"5","name":"faucet","Leaves":[],"frequency":0.528926},
+{"id":"6","name":"room","Leaves":[],"frequency":0.991736},
+{"id":"7","name":"cabinet","Leaves":[],"frequency":0.528926},
+{"id":"8","name":"wall","Leaves":[{"name":"wall","frequency":0.716433 }],"frequency":6.19374e-43}
+],
+"rules":[
+{"id":"0","source":"0","target":"2","factor":"orientation_parallel"},
+{"id":"1","source":"0","target":"1","factor":"orientation_parallel"},
+{"id":"2","source":"3","target":"0","factor":"vertical-support"},
+{"id":"3","source":"0","target":"8","factor":"orientation_parallel"},
+{"id":"4","source":"0","target":"8","factor":"orientation_perpendicular"},
+{"id":"5","source":"8","target":"2","factor":"orientation_parallel"},
+{"id":"6","source":"8","target":"1","factor":"orientation_parallel"},
+{"id":"7","source":"3","target":"8","factor":"vertical-support"},
+{"id":"8","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"9","source":"4","target":"5","factor":"vertical-support"},
+{"id":"10","source":"6","target":"1","factor":"vertical-support"},
+{"id":"11","source":"3","target":"7","factor":"vertical-support"},
+{"id":"12","source":"7","target":"4","factor":"vertical-support"},
+{"id":"13","source":"3","target":"1","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.088},
+{"id":"1","value":0.056},
+{"id":"2","value":0.190083},
+{"id":"3","value":0.136},
+{"id":"4","value":0.0933333},
+{"id":"5","value":0.088},
+{"id":"6","value":0.056},
+{"id":"7","value":0.190083},
+{"id":"8","value":0.08},
+{"id":"9","value":0.0991736},
+{"id":"10","value":0.181818},
+{"id":"11","value":0.173554},
+{"id":"12","value":0.107438},
+{"id":"13","value":0.107438}
+]}

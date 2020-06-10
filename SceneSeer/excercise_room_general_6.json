@@ -1,0 +1,17 @@
+{
+"vertices":[
+{"id":"0","name":"pillow","Leaves":[],"frequency":0.666667},
+{"id":"1","name":"book","Leaves":[],"frequency":0.333333},
+{"id":"2","name":"mirror","Leaves":[],"frequency":0.666667},
+{"id":"3","name":"cabinet","Leaves":[],"frequency":0.666667}
+],
+"rules":[
+{"id":"0","source":"0","target":"2","factor":"vertical-support"},
+{"id":"1","source":"3","target":"1","factor":"vertical-support"},
+{"id":"2","source":"3","target":"0","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.333333},
+{"id":"1","value":0.333333},
+{"id":"2","value":0.333333}
+]}

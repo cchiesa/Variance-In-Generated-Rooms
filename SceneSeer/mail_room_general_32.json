@@ -1,0 +1,11 @@
+{
+"vertices":[
+{"id":"0","name":"recycle_bin","Leaves":[],"frequency":0.315789},
+{"id":"1","name":"organizer","Leaves":[],"frequency":0.105263}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"proximity"}
+],
+"probability":[
+{"id":"0","value":0.0526316}
+]}

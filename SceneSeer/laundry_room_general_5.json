@@ -1,0 +1,14 @@
+{
+"vertices":[
+{"id":"0","name":"bottle.n.01","Leaves":[{"name":"bottle","frequency":1 },{"name":"thermos","frequency":1 },{"name":"laundry_detergent_jug","frequency":1 },{"name":"poison","frequency":1 }],"frequency":0.9995},
+{"id":"1","name":"floor","Leaves":[],"frequency":0.9995},
+{"id":"2","name":"microwave","Leaves":[],"frequency":0.333333}
+],
+"rules":[
+{"id":"0","source":"2","target":"0","factor":"vertical-support"},
+{"id":"1","source":"2","target":"1","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.333333},
+{"id":"1","value":0.333333}
+]}

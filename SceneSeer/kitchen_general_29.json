@@ -1,0 +1,13 @@
+{
+"vertices":[
+{"id":"0","name":"kitchen_counter","Leaves":[{"name":"kitchen_counter","frequency":0.891526 }],"frequency":0.732591},
+{"id":"1","name":"dishwasher","Leaves":[],"frequency":0.231111}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"proximity"},
+{"id":"1","source":"0","target":"0","factor":"orientation_perpendicular"}
+],
+"probability":[
+{"id":"0","value":0.0557103},
+{"id":"1","value":0.0557103}
+]}

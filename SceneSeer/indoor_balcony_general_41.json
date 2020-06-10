@@ -1,0 +1,15 @@
+{
+"vertices":[
+{"id":"0","name":"wall","Leaves":[{"name":"wall","frequency":0.5 }],"frequency":0.9995},
+{"id":"1","name":"chair","Leaves":[{"name":"chair","frequency":0.5 }],"frequency":0.9995}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"proximity"},
+{"id":"1","source":"1","target":"1","factor":"proximity"},
+{"id":"2","source":"0","target":"0","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":1},
+{"id":"1","value":1},
+{"id":"2","value":1}
+]}

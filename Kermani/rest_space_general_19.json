@@ -1,0 +1,13 @@
+{
+"vertices":[
+{"id":"0","name":"table","Leaves":[{"name":"table","frequency":0.819048 }],"frequency":0.347241},
+{"id":"1","name":"sofa_chair","Leaves":[{"name":"sofa_chair","frequency":0.675141 }],"frequency":0.321669}
+],
+"rules":[
+{"id":"0","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"1","source":"1","target":"0","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.0565276},
+{"id":"1","value":0.0524899}
+]}

@@ -1,0 +1,13 @@
+{
+"vertices":[
+{"id":"0","name":"monitor","Leaves":[],"frequency":0.282051},
+{"id":"1","name":"desk","Leaves":[{"name":"desk","frequency":0.773663 }],"frequency":0.483912}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"orientation_parallel"},
+{"id":"1","source":"1","target":"1","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.0579151},
+{"id":"1","value":0.0952381}
+]}

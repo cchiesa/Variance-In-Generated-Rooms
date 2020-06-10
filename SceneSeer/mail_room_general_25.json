@@ -1,0 +1,17 @@
+{
+"vertices":[
+{"id":"0","name":"container","Leaves":[],"frequency":0.105263},
+{"id":"1","name":"table","Leaves":[{"name":"table","frequency":0.7 }],"frequency":0.368421}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"proximity"},
+{"id":"1","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"2","source":"1","target":"0","factor":"orientation_parallel"},
+{"id":"3","source":"0","target":"1","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.105263},
+{"id":"1","value":0.105263},
+{"id":"2","value":0.105263},
+{"id":"3","value":0.105263}
+]}

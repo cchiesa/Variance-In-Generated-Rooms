@@ -1,0 +1,46 @@
+{
+"vertices":[
+{"id":"0","name":"tissue","Leaves":[],"frequency":0.5},
+{"id":"1","name":"paper","Leaves":[{"name":"money","frequency":1 },{"name":"motherlode","frequency":1 }],"frequency":0.75},
+{"id":"2","name":"stove_burner","Leaves":[],"frequency":0.75},
+{"id":"3","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"4","name":"paper_towel","Leaves":[],"frequency":0.25},
+{"id":"5","name":"table","Leaves":[{"name":"table","frequency":0.79992 }],"frequency":0.9995},
+{"id":"6","name":"picture","Leaves":[],"frequency":0.9995},
+{"id":"7","name":"books","Leaves":[],"frequency":0.5},
+{"id":"8","name":"floor","Leaves":[],"frequency":0.9995},
+{"id":"9","name":"desk","Leaves":[],"frequency":0.5},
+{"id":"10","name":"chair","Leaves":[{"name":"chair","frequency":0.190435 }],"frequency":0.9995},
+{"id":"11","name":"refridgerator","Leaves":[],"frequency":0.9995},
+{"id":"12","name":"pot","Leaves":[],"frequency":0.9995}
+],
+"rules":[
+{"id":"0","source":"10","target":"10","factor":"proximity"},
+{"id":"1","source":"5","target":"0","factor":"proximity"},
+{"id":"2","source":"10","target":"10","factor":"orientation_parallel"},
+{"id":"3","source":"9","target":"10","factor":"orientation_perpendicular"},
+{"id":"4","source":"10","target":"10","factor":"orientation_perpendicular"},
+{"id":"5","source":"5","target":"10","factor":"orientation_perpendicular"},
+{"id":"6","source":"6","target":"8","factor":"vertical-support"},
+{"id":"7","source":"6","target":"5","factor":"vertical-support"},
+{"id":"8","source":"6","target":"7","factor":"vertical-support"},
+{"id":"9","source":"1","target":"12","factor":"vertical-support"},
+{"id":"10","source":"12","target":"2","factor":"vertical-support"},
+{"id":"11","source":"4","target":"11","factor":"vertical-support"},
+{"id":"12","source":"3","target":"6","factor":"support"}
+],
+"probability":[
+{"id":"0","value":1},
+{"id":"1","value":0.5},
+{"id":"2","value":1},
+{"id":"3","value":0.5},
+{"id":"4","value":1},
+{"id":"5","value":0.5},
+{"id":"6","value":0.5},
+{"id":"7","value":0.5},
+{"id":"8","value":0.5},
+{"id":"9","value":0.5},
+{"id":"10","value":0.25},
+{"id":"11","value":0.25},
+{"id":"12","value":0.5}
+]}

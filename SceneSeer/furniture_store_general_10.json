@@ -1,0 +1,10 @@
+{
+"vertices":[
+{"id":"0","name":"night_stand","Leaves":[{"name":"night_stand","frequency":0.810127 }],"frequency":0.265836}
+],
+"rules":[
+{"id":"0","source":"0","target":"0","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.0550363}
+]}

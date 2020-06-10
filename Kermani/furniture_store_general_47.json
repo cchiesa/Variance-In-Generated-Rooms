@@ -1,0 +1,33 @@
+{
+"vertices":[
+{"id":"0","name":"chair","Leaves":[{"name":"chair","frequency":0.487888 }],"frequency":0.592593},
+{"id":"1","name":"night_stand","Leaves":[{"name":"night_stand","frequency":0.810127 }],"frequency":0.265836},
+{"id":"2","name":"lamp","Leaves":[{"name":"lamp","frequency":0.715789 }],"frequency":0.282451},
+{"id":"3","name":"floor","Leaves":[],"frequency":0.814815},
+{"id":"4","name":"table","Leaves":[],"frequency":0.740741},
+{"id":"5","name":"bowl","Leaves":[],"frequency":0.740741},
+{"id":"6","name":"wall","Leaves":[],"frequency":0.481481},
+{"id":"7","name":"room","Leaves":[],"frequency":0.925926},
+{"id":"8","name":"chair","Leaves":[{"name":"chair","frequency":0.487888 }],"frequency":0},
+{"id":"9","name":"chair","Leaves":[{"name":"chair","frequency":0.487888 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"3","target":"0","factor":"vertical-support"},
+{"id":"1","source":"3","target":"8","factor":"vertical-support"},
+{"id":"2","source":"3","target":"9","factor":"vertical-support"},
+{"id":"3","source":"1","target":"2","factor":"orientation_parallel"},
+{"id":"4","source":"3","target":"4","factor":"vertical-support"},
+{"id":"5","source":"3","target":"5","factor":"vertical-support"},
+{"id":"6","source":"3","target":"6","factor":"vertical-support"},
+{"id":"7","source":"7","target":"3","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.185185},
+{"id":"1","value":0.185185},
+{"id":"2","value":0.185185},
+{"id":"3","value":0.180685},
+{"id":"4","value":0.481481},
+{"id":"5","value":0.296296},
+{"id":"6","value":0.481481},
+{"id":"7","value":0.333333}
+]}

@@ -1,0 +1,10 @@
+{
+"vertices":[
+{"id":"0","name":"scanner","Leaves":[{"name":"scanner","frequency":0.75 }],"frequency":0.315789}
+],
+"rules":[
+{"id":"0","source":"0","target":"0","factor":"proximity"}
+],
+"probability":[
+{"id":"0","value":0.0526316}
+]}

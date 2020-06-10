@@ -1,0 +1,26 @@
+{
+"vertices":[
+{"id":"0","name":"chair","Leaves":[{"name":"chair","frequency":0.306035 }],"frequency":0.731959},
+{"id":"1","name":"desk","Leaves":[],"frequency":0.0721649},
+{"id":"2","name":"chair","Leaves":[{"name":"chair","frequency":0.306035 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"proximity"},
+{"id":"1","source":"1","target":"0","factor":"orientation_parallel"},
+{"id":"2","source":"0","target":"2","factor":"proximity"},
+{"id":"3","source":"0","target":"2","factor":"orientation_parallel"},
+{"id":"4","source":"0","target":"2","factor":"orientation_perpendicular"},
+{"id":"5","source":"0","target":"2","factor":"symmetry"},
+{"id":"6","source":"2","target":"1","factor":"proximity"},
+{"id":"7","source":"1","target":"2","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.0721649},
+{"id":"1","value":0.0618557},
+{"id":"2","value":0.659794},
+{"id":"3","value":0.515464},
+{"id":"4","value":0.278351},
+{"id":"5","value":0.0515464},
+{"id":"6","value":0.0721649},
+{"id":"7","value":0.0618557}
+]}

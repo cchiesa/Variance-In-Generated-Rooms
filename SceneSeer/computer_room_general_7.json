@@ -1,0 +1,13 @@
+{
+"vertices":[
+{"id":"0","name":"keyboard","Leaves":[{"name":"keyboard","frequency":0.590361 }],"frequency":0.352518},
+{"id":"1","name":"keyboard","Leaves":[{"name":"keyboard","frequency":0.590361 }],"frequency":6.19374e-43}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"orientation_parallel"},
+{"id":"1","source":"0","target":"1","factor":"symmetry"}
+],
+"probability":[
+{"id":"0","value":0.165468},
+{"id":"1","value":0.0215827}
+]}

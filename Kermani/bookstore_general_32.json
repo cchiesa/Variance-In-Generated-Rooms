@@ -1,0 +1,37 @@
+{
+"vertices":[
+{"id":"0","name":"books","Leaves":[{"name":"books","frequency":0.470588 }],"frequency":0.222222},
+{"id":"1","name":"shelf","Leaves":[{"name":"shelf","frequency":0.652174 }],"frequency":0.416667},
+{"id":"2","name":"box","Leaves":[{"name":"box","frequency":0.357143 }],"frequency":0.277778},
+{"id":"3","name":"clothing_rack","Leaves":[{"name":"clothing_rack","frequency":0.588235 }],"frequency":0.277778},
+{"id":"4","name":"wall","Leaves":[{"name":"wall","frequency":0.366667 }],"frequency":0.305556},
+{"id":"5","name":"floor","Leaves":[],"frequency":0.694444},
+{"id":"6","name":"pot","Leaves":[],"frequency":0.305556},
+{"id":"7","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"8","name":"books","Leaves":[{"name":"books","frequency":0.470588 }],"frequency":0},
+{"id":"9","name":"box","Leaves":[{"name":"box","frequency":0.357143 }],"frequency":0},
+{"id":"10","name":"wall","Leaves":[{"name":"wall","frequency":0.366667 }],"frequency":0},
+{"id":"11","name":"wall","Leaves":[{"name":"wall","frequency":0.366667 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"4","target":"0","factor":"orientation_perpendicular"},
+{"id":"1","source":"4","target":"8","factor":"orientation_perpendicular"},
+{"id":"2","source":"2","target":"1","factor":"proximity"},
+{"id":"3","source":"9","target":"1","factor":"proximity"},
+{"id":"4","source":"1","target":"1","factor":"proximity"},
+{"id":"5","source":"3","target":"3","factor":"proximity"},
+{"id":"6","source":"3","target":"3","factor":"orientation_parallel"},
+{"id":"7","source":"5","target":"6","factor":"support"},
+{"id":"8","source":"7","target":"5","factor":"horizontal-support"}
+],
+"probability":[
+{"id":"0","value":0.0833333},
+{"id":"1","value":0.0833333},
+{"id":"2","value":0.111111},
+{"id":"3","value":0.111111},
+{"id":"4","value":0.138889},
+{"id":"5","value":0.111111},
+{"id":"6","value":0.111111},
+{"id":"7","value":0.472222},
+{"id":"8","value":0.0277778}
+]}

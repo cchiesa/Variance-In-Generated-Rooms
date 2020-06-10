@@ -1,0 +1,32 @@
+{
+"vertices":[
+{"id":"0","name":"stove_burner","Leaves":[],"frequency":0.277778},
+{"id":"1","name":"table","Leaves":[{"name":"table","frequency":0.76 }],"frequency":0.527778},
+{"id":"2","name":"floor","Leaves":[],"frequency":0.694444},
+{"id":"3","name":"chair","Leaves":[{"name":"chair","frequency":0.375 }],"frequency":0.0833333},
+{"id":"4","name":"pot","Leaves":[],"frequency":0.305556}
+],
+"rules":[
+{"id":"0","source":"3","target":"1","factor":"proximity"},
+{"id":"1","source":"3","target":"3","factor":"proximity"},
+{"id":"2","source":"1","target":"1","factor":"proximity"},
+{"id":"3","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"4","source":"1","target":"3","factor":"orientation_perpendicular"},
+{"id":"5","source":"3","target":"3","factor":"symmetry"},
+{"id":"6","source":"2","target":"1","factor":"vertical-support"},
+{"id":"7","source":"2","target":"4","factor":"support"},
+{"id":"8","source":"4","target":"0","factor":"horizontal-support"},
+{"id":"9","source":"4","target":"1","factor":"horizontal-support"}
+],
+"probability":[
+{"id":"0","value":0.0833333},
+{"id":"1","value":0.0833333},
+{"id":"2","value":0.0833333},
+{"id":"3","value":0.111111},
+{"id":"4","value":0.0833333},
+{"id":"5","value":0.0833333},
+{"id":"6","value":0.111111},
+{"id":"7","value":0.472222},
+{"id":"8","value":0.0277778},
+{"id":"9","value":0.0277778}
+]}

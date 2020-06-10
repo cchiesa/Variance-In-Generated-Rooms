@@ -1,0 +1,10 @@
+{
+"vertices":[
+{"id":"0","name":"desk","Leaves":[{"name":"desk","frequency":0.773663 }],"frequency":0.483912}
+],
+"rules":[
+{"id":"0","source":"0","target":"0","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.0952381}
+]}

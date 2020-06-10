@@ -1,0 +1,11 @@
+{
+"vertices":[
+{"id":"0","name":"basket","Leaves":[],"frequency":0.2},
+{"id":"1","name":"air_vent","Leaves":[],"frequency":0.2}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.2}
+]}

@@ -1,0 +1,36 @@
+{
+"vertices":[
+{"id":"0","name":"table","Leaves":[{"name":"table","frequency":0.684783 }],"frequency":0.453237},
+{"id":"1","name":"desk","Leaves":[{"name":"desk","frequency":0.584071 }],"frequency":0.47482},
+{"id":"2","name":"chair","Leaves":[{"name":"chair","frequency":0.3769 }],"frequency":0.892086}
+],
+"rules":[
+{"id":"0","source":"2","target":"2","factor":"proximity"},
+{"id":"1","source":"2","target":"1","factor":"proximity"},
+{"id":"2","source":"2","target":"0","factor":"proximity"},
+{"id":"3","source":"1","target":"1","factor":"proximity"},
+{"id":"4","source":"2","target":"2","factor":"orientation_parallel"},
+{"id":"5","source":"2","target":"0","factor":"orientation_parallel"},
+{"id":"6","source":"0","target":"2","factor":"orientation_parallel"},
+{"id":"7","source":"2","target":"1","factor":"orientation_parallel"},
+{"id":"8","source":"1","target":"2","factor":"orientation_parallel"},
+{"id":"9","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"10","source":"0","target":"0","factor":"orientation_parallel"},
+{"id":"11","source":"2","target":"2","factor":"orientation_perpendicular"},
+{"id":"12","source":"0","target":"2","factor":"orientation_perpendicular"}
+],
+"probability":[
+{"id":"0","value":0.690647},
+{"id":"1","value":0.359712},
+{"id":"2","value":0.330935},
+{"id":"3","value":0.057554},
+{"id":"4","value":0.561151},
+{"id":"5","value":0.482014},
+{"id":"6","value":0.266187},
+{"id":"7","value":0.42446},
+{"id":"8","value":0.23741},
+{"id":"9","value":0.23741},
+{"id":"10","value":0.18705},
+{"id":"11","value":0.100719},
+{"id":"12","value":0.122302}
+]}

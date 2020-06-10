@@ -1,0 +1,24 @@
+{
+"vertices":[
+{"id":"0","name":"toilet","Leaves":[],"frequency":0.536},
+{"id":"1","name":"sink","Leaves":[{"name":"sink","frequency":0.7364 }],"frequency":0.528926},
+{"id":"2","name":"bathroom_vanity","Leaves":[],"frequency":0.072}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"proximity"},
+{"id":"1","source":"1","target":"1","factor":"proximity"},
+{"id":"2","source":"2","target":"1","factor":"proximity"},
+{"id":"3","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"4","source":"0","target":"1","factor":"orientation_parallel"},
+{"id":"5","source":"2","target":"1","factor":"orientation_parallel"},
+{"id":"6","source":"1","target":"1","factor":"side_to_side"}
+],
+"probability":[
+{"id":"0","value":0.088},
+{"id":"1","value":0.0746667},
+{"id":"2","value":0.064},
+{"id":"3","value":0.08},
+{"id":"4","value":0.0533333},
+{"id":"5","value":0.12},
+{"id":"6","value":0.008}
+]}

@@ -1,0 +1,12 @@
+{
+"vertices":[
+{"id":"0","name":"bed","Leaves":[{"name":"bed","frequency":0.81062 }],"frequency":0.475597}
+],
+"rules":[
+{"id":"0","source":"0","target":"0","factor":"proximity"},
+{"id":"1","source":"0","target":"0","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.111111},
+{"id":"1","value":0.0996885}
+]}

@@ -1,0 +1,19 @@
+{
+"vertices":[
+{"id":"0","name":"computer","Leaves":[{"name":"computer","frequency":0.740625 }],"frequency":0.305019},
+{"id":"1","name":"desk","Leaves":[{"name":"desk","frequency":0.773663 }],"frequency":0.483912}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"proximity"},
+{"id":"1","source":"0","target":"0","factor":"proximity"},
+{"id":"2","source":"1","target":"0","factor":"orientation_parallel"},
+{"id":"3","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"4","source":"0","target":"0","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.104247},
+{"id":"1","value":0.0810811},
+{"id":"2","value":0.155727},
+{"id":"3","value":0.0952381},
+{"id":"4","value":0.0733591}
+]}

@@ -1,0 +1,31 @@
+{
+"vertices":[
+{"id":"0","name":"workoutequipment","Leaves":[{"name":"workoutequipment","frequency":0.333333 }],"frequency":0.666667},
+{"id":"1","name":"pillow","Leaves":[{"name":"pillow","frequency":0.666667 }],"frequency":0.666667},
+{"id":"2","name":"sofa_chair","Leaves":[],"frequency":0.666667},
+{"id":"3","name":"box","Leaves":[],"frequency":0.666667},
+{"id":"4","name":"drawer","Leaves":[{"name":"drawer","frequency":0.666667 }],"frequency":0.666667},
+{"id":"5","name":"workoutequipment","Leaves":[{"name":"workoutequipment","frequency":0.333333 }],"frequency":1.28486e+31}
+],
+"rules":[
+{"id":"0","source":"3","target":"0","factor":"proximity"},
+{"id":"1","source":"1","target":"0","factor":"proximity"},
+{"id":"2","source":"0","target":"5","factor":"proximity"},
+{"id":"3","source":"3","target":"5","factor":"proximity"},
+{"id":"4","source":"1","target":"5","factor":"proximity"},
+{"id":"5","source":"1","target":"2","factor":"proximity"},
+{"id":"6","source":"3","target":"4","factor":"proximity"},
+{"id":"7","source":"3","target":"1","factor":"proximity"},
+{"id":"8","source":"1","target":"1","factor":"proximity"}
+],
+"probability":[
+{"id":"0","value":0.333333},
+{"id":"1","value":0.333333},
+{"id":"2","value":0.333333},
+{"id":"3","value":0.333333},
+{"id":"4","value":0.333333},
+{"id":"5","value":0.666667},
+{"id":"6","value":0.666667},
+{"id":"7","value":0.333333},
+{"id":"8","value":0.333333}
+]}

@@ -1,0 +1,14 @@
+{
+"vertices":[
+{"id":"0","name":"monitor","Leaves":[{"name":"monitor","frequency":0.449275 }],"frequency":0.446043}
+],
+"rules":[
+{"id":"0","source":"0","target":"0","factor":"proximity"},
+{"id":"1","source":"0","target":"0","factor":"orientation_parallel"},
+{"id":"2","source":"0","target":"0","factor":"symmetry"}
+],
+"probability":[
+{"id":"0","value":0.0791367},
+{"id":"1","value":0.273381},
+{"id":"2","value":0.0215827}
+]}

@@ -1,0 +1,38 @@
+{
+"vertices":[
+{"id":"0","name":"bookshelf","Leaves":[{"name":"bookshelf","frequency":0.545454 }],"frequency":0.333333},
+{"id":"1","name":"chair","Leaves":[{"name":"chair","frequency":0.375 }],"frequency":0.0833333},
+{"id":"2","name":"table","Leaves":[{"name":"table","frequency":0.76 }],"frequency":0.527778},
+{"id":"3","name":"bookstand","Leaves":[{"name":"bookstand","frequency":0.7 }],"frequency":0.194444},
+{"id":"4","name":"books","Leaves":[{"name":"books","frequency":0.470588 }],"frequency":0.222222},
+{"id":"5","name":"wall","Leaves":[{"name":"wall","frequency":0.366667 }],"frequency":0.305556},
+{"id":"6","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"7","name":"shelves","Leaves":[],"frequency":0.388889},
+{"id":"8","name":"bookshelf","Leaves":[{"name":"bookshelf","frequency":0.545454 }],"frequency":0},
+{"id":"9","name":"bookshelf","Leaves":[{"name":"bookshelf","frequency":0.545454 }],"frequency":0},
+{"id":"10","name":"wall","Leaves":[{"name":"wall","frequency":0.366667 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"0","target":"3","factor":"orientation_parallel"},
+{"id":"1","source":"0","target":"8","factor":"orientation_parallel"},
+{"id":"2","source":"8","target":"3","factor":"orientation_parallel"},
+{"id":"3","source":"0","target":"9","factor":"orientation_parallel"},
+{"id":"4","source":"8","target":"9","factor":"orientation_parallel"},
+{"id":"5","source":"9","target":"3","factor":"orientation_parallel"},
+{"id":"6","source":"5","target":"10","factor":"orientation_parallel"},
+{"id":"7","source":"1","target":"2","factor":"proximity"},
+{"id":"8","source":"4","target":"4","factor":"orientation_parallel"},
+{"id":"9","source":"6","target":"7","factor":"horizontal-support"}
+],
+"probability":[
+{"id":"0","value":0.277778},
+{"id":"1","value":0.138889},
+{"id":"2","value":0.277778},
+{"id":"3","value":0.138889},
+{"id":"4","value":0.138889},
+{"id":"5","value":0.277778},
+{"id":"6","value":0.166667},
+{"id":"7","value":0.0833333},
+{"id":"8","value":0.194444},
+{"id":"9","value":0.0277778}
+]}

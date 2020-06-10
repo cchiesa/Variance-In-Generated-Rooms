@@ -1,0 +1,14 @@
+{
+"vertices":[
+{"id":"0","name":"pillow","Leaves":[],"frequency":0.666667},
+{"id":"1","name":"table","Leaves":[],"frequency":0.666667},
+{"id":"2","name":"cabinet","Leaves":[],"frequency":0.666667}
+],
+"rules":[
+{"id":"0","source":"1","target":"2","factor":"vertical-support"},
+{"id":"1","source":"2","target":"0","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.333333},
+{"id":"1","value":0.333333}
+]}

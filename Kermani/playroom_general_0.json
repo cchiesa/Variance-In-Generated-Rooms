@@ -1,0 +1,43 @@
+{
+"vertices":[
+{"id":"0","name":"wall","Leaves":[{"name":"wall","frequency":0.368421 }],"frequency":0.677419},
+{"id":"1","name":"box","Leaves":[{"name":"box","frequency":0.7 }],"frequency":0.451613},
+{"id":"2","name":"pillow","Leaves":[{"name":"pillow","frequency":0.666666 }],"frequency":0.193548},
+{"id":"3","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"4","name":"floor","Leaves":[],"frequency":0.9995},
+{"id":"5","name":"unknown","Leaves":[],"frequency":0.580645},
+{"id":"6","name":"wall","Leaves":[{"name":"wall","frequency":0.368421 }],"frequency":0},
+{"id":"7","name":"wall","Leaves":[{"name":"wall","frequency":0.368421 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"proximity"},
+{"id":"1","source":"2","target":"0","factor":"proximity"},
+{"id":"2","source":"3","target":"0","factor":"vertical-support"},
+{"id":"3","source":"0","target":"6","factor":"support"},
+{"id":"4","source":"1","target":"6","factor":"proximity"},
+{"id":"5","source":"2","target":"6","factor":"proximity"},
+{"id":"6","source":"3","target":"6","factor":"vertical-support"},
+{"id":"7","source":"0","target":"7","factor":"support"},
+{"id":"8","source":"6","target":"7","factor":"support"},
+{"id":"9","source":"1","target":"7","factor":"proximity"},
+{"id":"10","source":"2","target":"7","factor":"proximity"},
+{"id":"11","source":"3","target":"7","factor":"vertical-support"},
+{"id":"12","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"13","source":"4","target":"5","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.225806},
+{"id":"1","value":0.0645161},
+{"id":"2","value":0.354839},
+{"id":"3","value":0.580645},
+{"id":"4","value":0.225806},
+{"id":"5","value":0.0645161},
+{"id":"6","value":0.354839},
+{"id":"7","value":0.580645},
+{"id":"8","value":0.580645},
+{"id":"9","value":0.225806},
+{"id":"10","value":0.0645161},
+{"id":"11","value":0.354839},
+{"id":"12","value":0.580645},
+{"id":"13","value":0.129032}
+]}

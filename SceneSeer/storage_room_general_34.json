@@ -1,0 +1,20 @@
+{
+"vertices":[
+{"id":"0","name":"blinds","Leaves":[{"name":"blinds","frequency":0.428571 }],"frequency":0.6},
+{"id":"1","name":"shelf","Leaves":[],"frequency":0.4},
+{"id":"2","name":"blinds","Leaves":[{"name":"blinds","frequency":0.428571 }],"frequency":6.19374e-43}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"orientation_parallel"},
+{"id":"1","source":"0","target":"2","factor":"proximity"},
+{"id":"2","source":"0","target":"2","factor":"orientation_parallel"},
+{"id":"3","source":"0","target":"2","factor":"orientation_perpendicular"},
+{"id":"4","source":"1","target":"2","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.4},
+{"id":"1","value":0.2},
+{"id":"2","value":0.4},
+{"id":"3","value":0.4},
+{"id":"4","value":0.4}
+]}

@@ -1,0 +1,13 @@
+{
+"vertices":[
+{"id":"0","name":"wall","Leaves":[{"name":"wall","frequency":0.592593 }],"frequency":0.615385},
+{"id":"1","name":"bookshelf","Leaves":[],"frequency":0.384615}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"proximity"},
+{"id":"1","source":"0","target":"0","factor":"proximity"}
+],
+"probability":[
+{"id":"0","value":0.230769},
+{"id":"1","value":0.153846}
+]}

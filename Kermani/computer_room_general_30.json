@@ -1,0 +1,47 @@
+{
+"vertices":[
+{"id":"0","name":"chair","Leaves":[{"name":"chair","frequency":0.3769 }],"frequency":0.892086},
+{"id":"1","name":"monitor","Leaves":[{"name":"monitor","frequency":0.449275 }],"frequency":0.446043},
+{"id":"2","name":"cpu","Leaves":[{"name":"cpu","frequency":0.588237 }],"frequency":0.143885},
+{"id":"3","name":"desk","Leaves":[{"name":"desk","frequency":0.584071 }],"frequency":0.47482},
+{"id":"4","name":"computer","Leaves":[{"name":"computer","frequency":0.313559 }],"frequency":0.266187},
+{"id":"5","name":"keyboard","Leaves":[{"name":"keyboard","frequency":0.590361 }],"frequency":0.352518},
+{"id":"6","name":"table","Leaves":[{"name":"table","frequency":0.684783 }],"frequency":0.453237},
+{"id":"7","name":"chair","Leaves":[{"name":"chair","frequency":0.3769 }],"frequency":6.19374e-43}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"proximity"},
+{"id":"1","source":"0","target":"6","factor":"orientation_parallel"},
+{"id":"2","source":"0","target":"7","factor":"proximity"},
+{"id":"3","source":"0","target":"7","factor":"orientation_parallel"},
+{"id":"4","source":"7","target":"1","factor":"proximity"},
+{"id":"5","source":"7","target":"6","factor":"orientation_parallel"},
+{"id":"6","source":"2","target":"3","factor":"proximity"},
+{"id":"7","source":"4","target":"5","factor":"proximity"},
+{"id":"8","source":"1","target":"5","factor":"orientation_parallel"},
+{"id":"9","source":"6","target":"1","factor":"orientation_parallel"},
+{"id":"10","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"11","source":"3","target":"1","factor":"orientation_parallel"},
+{"id":"12","source":"5","target":"1","factor":"orientation_parallel"},
+{"id":"13","source":"1","target":"3","factor":"orientation_parallel"},
+{"id":"14","source":"4","target":"5","factor":"orientation_parallel"},
+{"id":"15","source":"6","target":"4","factor":"orientation_perpendicular"}
+],
+"probability":[
+{"id":"0","value":0.23741},
+{"id":"1","value":0.482014},
+{"id":"2","value":0.690647},
+{"id":"3","value":0.561151},
+{"id":"4","value":0.23741},
+{"id":"5","value":0.482014},
+{"id":"6","value":0.0791367},
+{"id":"7","value":0.0791367},
+{"id":"8","value":0.258993},
+{"id":"9","value":0.18705},
+{"id":"10","value":0.273381},
+{"id":"11","value":0.302158},
+{"id":"12","value":0.115108},
+{"id":"13","value":0.143885},
+{"id":"14","value":0.0791367},
+{"id":"15","value":0.0719424}
+]}

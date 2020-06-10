@@ -1,0 +1,17 @@
+{
+"vertices":[
+{"id":"0","name":"wall","Leaves":[],"frequency":0.666667},
+{"id":"1","name":"hole_puncher","Leaves":[],"frequency":0.666667},
+{"id":"2","name":"microwave","Leaves":[],"frequency":0.666667},
+{"id":"3","name":"pot","Leaves":[],"frequency":0.666667}
+],
+"rules":[
+{"id":"0","source":"2","target":"0","factor":"horizontal-support"},
+{"id":"1","source":"2","target":"1","factor":"horizontal-support"},
+{"id":"2","source":"2","target":"3","factor":"horizontal-support"}
+],
+"probability":[
+{"id":"0","value":0.333333},
+{"id":"1","value":0.333333},
+{"id":"2","value":0.333333}
+]}

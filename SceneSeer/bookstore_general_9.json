@@ -1,0 +1,28 @@
+{
+"vertices":[
+{"id":"0","name":"bookshelf","Leaves":[{"name":"bookshelf","frequency":0.545454 }],"frequency":0.333333},
+{"id":"1","name":"bookshelf","Leaves":[{"name":"bookshelf","frequency":0.545454 }],"frequency":6.19374e-43},
+{"id":"2","name":"bookshelf","Leaves":[{"name":"bookshelf","frequency":0.545454 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"proximity"},
+{"id":"1","source":"0","target":"1","factor":"orientation_parallel"},
+{"id":"2","source":"0","target":"1","factor":"orientation_perpendicular"},
+{"id":"3","source":"0","target":"2","factor":"proximity"},
+{"id":"4","source":"1","target":"2","factor":"proximity"},
+{"id":"5","source":"0","target":"2","factor":"orientation_parallel"},
+{"id":"6","source":"1","target":"2","factor":"orientation_parallel"},
+{"id":"7","source":"0","target":"2","factor":"orientation_perpendicular"},
+{"id":"8","source":"1","target":"2","factor":"orientation_perpendicular"}
+],
+"probability":[
+{"id":"0","value":0.111111},
+{"id":"1","value":0.138889},
+{"id":"2","value":0.0833333},
+{"id":"3","value":0.111111},
+{"id":"4","value":0.111111},
+{"id":"5","value":0.138889},
+{"id":"6","value":0.138889},
+{"id":"7","value":0.0833333},
+{"id":"8","value":0.0833333}
+]}

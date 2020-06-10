@@ -1,0 +1,19 @@
+{
+"vertices":[
+{"id":"0","name":"toilet","Leaves":[],"frequency":0.536},
+{"id":"1","name":"sink","Leaves":[{"name":"sink","frequency":0.7364 }],"frequency":0.528926}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"proximity"},
+{"id":"1","source":"1","target":"1","factor":"proximity"},
+{"id":"2","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"3","source":"0","target":"1","factor":"orientation_parallel"},
+{"id":"4","source":"1","target":"1","factor":"side_to_side"}
+],
+"probability":[
+{"id":"0","value":0.088},
+{"id":"1","value":0.0746667},
+{"id":"2","value":0.08},
+{"id":"3","value":0.0533333},
+{"id":"4","value":0.008}
+]}

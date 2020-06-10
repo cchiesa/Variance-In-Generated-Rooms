@@ -1,0 +1,17 @@
+{
+"vertices":[
+{"id":"0","name":"container","Leaves":[{"name":"container","frequency":0.75 }],"frequency":0.428571},
+{"id":"1","name":"washing_machine","Leaves":[{"name":"washing_machine","frequency":0.5 }],"frequency":0.857143}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"proximity"},
+{"id":"1","source":"1","target":"1","factor":"proximity"},
+{"id":"2","source":"1","target":"0","factor":"orientation_parallel"},
+{"id":"3","source":"1","target":"1","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.285714},
+{"id":"1","value":0.285714},
+{"id":"2","value":0.428571},
+{"id":"3","value":0.285714}
+]}

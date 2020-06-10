@@ -1,0 +1,14 @@
+{
+"vertices":[
+{"id":"0","name":"table","Leaves":[],"frequency":0.48},
+{"id":"1","name":"desk","Leaves":[],"frequency":0.269231},
+{"id":"2","name":"chair","Leaves":[],"frequency":0.5}
+],
+"rules":[
+{"id":"0","source":"2","target":"1","factor":"proximity"},
+{"id":"1","source":"2","target":"0","factor":"proximity"}
+],
+"probability":[
+{"id":"0","value":0.269231},
+{"id":"1","value":0.153846}
+]}

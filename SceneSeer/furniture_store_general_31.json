@@ -1,0 +1,19 @@
+{
+"vertices":[
+{"id":"0","name":"night_stand","Leaves":[{"name":"night_stand","frequency":0.810127 }],"frequency":0.265836},
+{"id":"1","name":"bed","Leaves":[{"name":"bed","frequency":0.81062 }],"frequency":0.475597}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"proximity"},
+{"id":"1","source":"1","target":"1","factor":"proximity"},
+{"id":"2","source":"1","target":"0","factor":"orientation_parallel"},
+{"id":"3","source":"0","target":"0","factor":"orientation_parallel"},
+{"id":"4","source":"1","target":"1","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.159917},
+{"id":"1","value":0.111111},
+{"id":"2","value":0.196262},
+{"id":"3","value":0.0550363},
+{"id":"4","value":0.0996885}
+]}

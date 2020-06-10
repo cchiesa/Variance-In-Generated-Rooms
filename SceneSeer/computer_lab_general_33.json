@@ -1,0 +1,14 @@
+{
+"vertices":[
+{"id":"0","name":"stove_burner","Leaves":[],"frequency":0.5},
+{"id":"1","name":"paper_towel_dispenser","Leaves":[],"frequency":0.166667},
+{"id":"2","name":"monitor","Leaves":[],"frequency":0.666667}
+],
+"rules":[
+{"id":"0","source":"2","target":"1","factor":"vertical-support"},
+{"id":"1","source":"2","target":"0","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.166667},
+{"id":"1","value":0.166667}
+]}

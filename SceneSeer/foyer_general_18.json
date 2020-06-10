@@ -1,0 +1,11 @@
+{
+"vertices":[
+{"id":"0","name":"bag","Leaves":[],"frequency":0.5},
+{"id":"1","name":"curtain","Leaves":[],"frequency":0.25}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"horizontal-support"}
+],
+"probability":[
+{"id":"0","value":0.25}
+]}

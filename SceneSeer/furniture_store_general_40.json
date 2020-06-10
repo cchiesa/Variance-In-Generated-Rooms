@@ -1,0 +1,11 @@
+{
+"vertices":[
+{"id":"0","name":"floor","Leaves":[],"frequency":0.814815},
+{"id":"1","name":"bowl","Leaves":[],"frequency":0.740741}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.296296}
+]}

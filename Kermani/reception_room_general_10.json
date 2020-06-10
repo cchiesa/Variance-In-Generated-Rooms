@@ -1,0 +1,24 @@
+{
+"vertices":[
+{"id":"0","name":"plant","Leaves":[{"name":"plant","frequency":0.847534 }],"frequency":0.411765},
+{"id":"1","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"2","name":"wall","Leaves":[{"name":"wall","frequency":0.526316 }],"frequency":0.37037},
+{"id":"3","name":"picture","Leaves":[],"frequency":0.588235},
+{"id":"4","name":"floor","Leaves":[],"frequency":0.882353},
+{"id":"5","name":"chair","Leaves":[{"name":"chair","frequency":0.506826 }],"frequency":0.647059},
+{"id":"6","name":"plate","Leaves":[{"name":"plate","frequency":0.384615 }],"frequency":0.185185}
+],
+"rules":[
+{"id":"0","source":"0","target":"0","factor":"proximity"},
+{"id":"1","source":"6","target":"6","factor":"orientation_parallel"},
+{"id":"2","source":"2","target":"5","factor":"orientation_parallel"},
+{"id":"3","source":"3","target":"4","factor":"vertical-support"},
+{"id":"4","source":"1","target":"4","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.0740741},
+{"id":"1","value":0.185185},
+{"id":"2","value":0.111111},
+{"id":"3","value":0.529412},
+{"id":"4","value":0.352941}
+]}

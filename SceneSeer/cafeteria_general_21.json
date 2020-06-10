@@ -1,0 +1,20 @@
+{
+"vertices":[
+{"id":"0","name":"cups","Leaves":[{"name":"cups","frequency":0.4 }],"frequency":0.153846},
+{"id":"1","name":"counter","Leaves":[{"name":"counter","frequency":0.8 }],"frequency":0.307692},
+{"id":"2","name":"monitor","Leaves":[{"name":"monitor","frequency":0.5 }],"frequency":0.153846}
+],
+"rules":[
+{"id":"0","source":"0","target":"0","factor":"proximity"},
+{"id":"1","source":"1","target":"0","factor":"proximity"},
+{"id":"2","source":"1","target":"2","factor":"proximity"},
+{"id":"3","source":"2","target":"2","factor":"proximity"},
+{"id":"4","source":"0","target":"1","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.0769231},
+{"id":"1","value":0.0769231},
+{"id":"2","value":0.0769231},
+{"id":"3","value":0.0769231},
+{"id":"4","value":0.153846}
+]}

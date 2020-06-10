@@ -1,0 +1,14 @@
+{
+"vertices":[
+{"id":"0","name":"bag","Leaves":[],"frequency":0.666667},
+{"id":"1","name":"book","Leaves":[],"frequency":0.333333},
+{"id":"2","name":"guitar","Leaves":[],"frequency":0.333333}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"vertical-support"},
+{"id":"1","source":"0","target":"2","factor":"horizontal-support"}
+],
+"probability":[
+{"id":"0","value":0.333333},
+{"id":"1","value":0.333333}
+]}

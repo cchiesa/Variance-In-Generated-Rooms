@@ -1,0 +1,16 @@
+{
+"vertices":[
+{"id":"0","name":"ottoman","Leaves":[{"name":"ottoman","frequency":0.375 }],"frequency":0.5},
+{"id":"1","name":"chair","Leaves":[{"name":"chair","frequency":0.5 }],"frequency":0.333333},
+{"id":"2","name":"ottoman","Leaves":[{"name":"ottoman","frequency":0.375 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"0","target":"2","factor":"proximity"},
+{"id":"1","source":"1","target":"1","factor":"proximity"},
+{"id":"2","source":"1","target":"1","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.333333},
+{"id":"1","value":0.333333},
+{"id":"2","value":0.333333}
+]}

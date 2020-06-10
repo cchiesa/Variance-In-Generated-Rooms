@@ -1,0 +1,11 @@
+{
+"vertices":[
+{"id":"0","name":"blanket","Leaves":[],"frequency":0.222222},
+{"id":"1","name":"pianobench","Leaves":[],"frequency":0.222222}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"proximity"}
+],
+"probability":[
+{"id":"0","value":0.222222}
+]}

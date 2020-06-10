@@ -1,0 +1,33 @@
+{
+"vertices":[
+{"id":"0","name":"unknown","Leaves":[],"frequency":0.362924},
+{"id":"1","name":"room","Leaves":[],"frequency":0.989556},
+{"id":"2","name":"wall","Leaves":[{"name":"wall","frequency":0.575116 }],"frequency":0.819843},
+{"id":"3","name":"box","Leaves":[],"frequency":0.308094},
+{"id":"4","name":"pillow","Leaves":[{"name":"pillow","frequency":0.552366 }],"frequency":0.477807},
+{"id":"5","name":"table","Leaves":[],"frequency":0.399478},
+{"id":"6","name":"floor","Leaves":[],"frequency":0.885117},
+{"id":"7","name":"bed","Leaves":[{"name":"bed","frequency":0.922727 }],"frequency":0.721137},
+{"id":"8","name":"desk","Leaves":[],"frequency":0.169713},
+{"id":"9","name":"chair","Leaves":[],"frequency":0.291297}
+],
+"rules":[
+{"id":"0","source":"4","target":"4","factor":"proximity"},
+{"id":"1","source":"3","target":"2","factor":"proximity"},
+{"id":"2","source":"4","target":"4","factor":"orientation_parallel"},
+{"id":"3","source":"8","target":"9","factor":"orientation_parallel"},
+{"id":"4","source":"1","target":"2","factor":"vertical-support"},
+{"id":"5","source":"6","target":"5","factor":"vertical-support"},
+{"id":"6","source":"6","target":"0","factor":"vertical-support"},
+{"id":"7","source":"6","target":"7","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.170515},
+{"id":"1","value":0.0657194},
+{"id":"2","value":0.0781528},
+{"id":"3","value":0.397869},
+{"id":"4","value":0.637076},
+{"id":"5","value":0.130548},
+{"id":"6","value":0.177546},
+{"id":"7","value":0.631854}
+]}

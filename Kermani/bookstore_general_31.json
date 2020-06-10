@@ -1,0 +1,26 @@
+{
+"vertices":[
+{"id":"0","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"1","name":"table","Leaves":[{"name":"table","frequency":0.76 }],"frequency":0.527778},
+{"id":"2","name":"floor","Leaves":[],"frequency":0.694444},
+{"id":"3","name":"shelves","Leaves":[],"frequency":0.388889},
+{"id":"4","name":"clothing_rack","Leaves":[{"name":"clothing_rack","frequency":0.588235 }],"frequency":0.277778},
+{"id":"5","name":"refridgerator","Leaves":[],"frequency":0.361111},
+{"id":"6","name":"pot","Leaves":[],"frequency":0.305556}
+],
+"rules":[
+{"id":"0","source":"4","target":"4","factor":"proximity"},
+{"id":"1","source":"1","target":"1","factor":"proximity"},
+{"id":"2","source":"4","target":"4","factor":"symmetry"},
+{"id":"3","source":"2","target":"6","factor":"support"},
+{"id":"4","source":"0","target":"3","factor":"horizontal-support"},
+{"id":"5","source":"6","target":"5","factor":"horizontal-support"}
+],
+"probability":[
+{"id":"0","value":0.111111},
+{"id":"1","value":0.0833333},
+{"id":"2","value":0.0833333},
+{"id":"3","value":0.472222},
+{"id":"4","value":0.0277778},
+{"id":"5","value":0.0277778}
+]}

@@ -1,0 +1,23 @@
+{
+"vertices":[
+{"id":"0","name":"box","Leaves":[{"name":"box","frequency":0.625 }],"frequency":0.263158},
+{"id":"1","name":"table","Leaves":[{"name":"table","frequency":0.7 }],"frequency":0.368421},
+{"id":"2","name":"shelf","Leaves":[],"frequency":0.368421},
+{"id":"3","name":"garbage_bin","Leaves":[{"name":"garbage_bin","frequency":0.733334 }],"frequency":0.578947},
+{"id":"4","name":"counter","Leaves":[],"frequency":0.315789},
+{"id":"5","name":"scanner","Leaves":[{"name":"scanner","frequency":0.75 }],"frequency":0.315789}
+],
+"rules":[
+{"id":"0","source":"0","target":"2","factor":"proximity"},
+{"id":"1","source":"3","target":"1","factor":"proximity"},
+{"id":"2","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"3","source":"0","target":"0","factor":"orientation_parallel"},
+{"id":"4","source":"5","target":"4","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.210526},
+{"id":"1","value":0.105263},
+{"id":"2","value":0.105263},
+{"id":"3","value":0.157895},
+{"id":"4","value":0.105263}
+]}

@@ -1,0 +1,47 @@
+{
+"vertices":[
+{"id":"0","name":"table","Leaves":[{"name":"table","frequency":0.607326 }],"frequency":0.673469},
+{"id":"1","name":"garbage_bin","Leaves":[],"frequency":0.326531},
+{"id":"2","name":"floor","Leaves":[],"frequency":0.77551},
+{"id":"3","name":"table","Leaves":[{"name":"table","frequency":0.607326 }],"frequency":0},
+{"id":"4","name":"table","Leaves":[{"name":"table","frequency":0.607326 }],"frequency":0},
+{"id":"5","name":"table","Leaves":[{"name":"table","frequency":0.607326 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"vertical-support"},
+{"id":"1","source":"0","target":"3","factor":"orientation_parallel"},
+{"id":"2","source":"0","target":"3","factor":"symmetry"},
+{"id":"3","source":"1","target":"3","factor":"vertical-support"},
+{"id":"4","source":"0","target":"4","factor":"orientation_parallel"},
+{"id":"5","source":"3","target":"4","factor":"orientation_parallel"},
+{"id":"6","source":"0","target":"4","factor":"symmetry"},
+{"id":"7","source":"3","target":"4","factor":"symmetry"},
+{"id":"8","source":"1","target":"4","factor":"vertical-support"},
+{"id":"9","source":"0","target":"5","factor":"orientation_parallel"},
+{"id":"10","source":"3","target":"5","factor":"orientation_parallel"},
+{"id":"11","source":"4","target":"5","factor":"orientation_parallel"},
+{"id":"12","source":"0","target":"5","factor":"symmetry"},
+{"id":"13","source":"3","target":"5","factor":"symmetry"},
+{"id":"14","source":"4","target":"5","factor":"symmetry"},
+{"id":"15","source":"1","target":"5","factor":"vertical-support"},
+{"id":"16","source":"1","target":"2","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.102041},
+{"id":"1","value":0.186813},
+{"id":"2","value":0.00686813},
+{"id":"3","value":0.102041},
+{"id":"4","value":0.186813},
+{"id":"5","value":0.186813},
+{"id":"6","value":0.00686813},
+{"id":"7","value":0.00686813},
+{"id":"8","value":0.102041},
+{"id":"9","value":0.186813},
+{"id":"10","value":0.186813},
+{"id":"11","value":0.186813},
+{"id":"12","value":0.00686813},
+{"id":"13","value":0.00686813},
+{"id":"14","value":0.00686813},
+{"id":"15","value":0.102041},
+{"id":"16","value":0.122449}
+]}

@@ -1,0 +1,15 @@
+{
+"vertices":[
+{"id":"0","name":"coffee_table","Leaves":[],"frequency":0.157895},
+{"id":"1","name":"sofa","Leaves":[{"name":"sofa","frequency":0.8125 }],"frequency":0.342105}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"proximity"},
+{"id":"1","source":"0","target":"1","factor":"orientation_parallel"},
+{"id":"2","source":"1","target":"1","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.105263},
+{"id":"1","value":0.0789474},
+{"id":"2","value":0.0789474}
+]}

@@ -1,0 +1,31 @@
+{
+"vertices":[
+{"id":"0","name":"pillow","Leaves":[{"name":"pillow","frequency":0.617299 }],"frequency":0.375566},
+{"id":"1","name":"sofa","Leaves":[{"name":"sofa","frequency":0.832636 }],"frequency":0.59403},
+{"id":"2","name":"endtable","Leaves":[],"frequency":0.164179},
+{"id":"3","name":"table","Leaves":[],"frequency":0.678733},
+{"id":"4","name":"wall","Leaves":[{"name":"wall","frequency":0.335145 }],"frequency":0.638009},
+{"id":"5","name":"room","Leaves":[],"frequency":0.977376},
+{"id":"6","name":"floor","Leaves":[],"frequency":0.841629},
+{"id":"7","name":"pillow","Leaves":[{"name":"pillow","frequency":0.617299 }],"frequency":6.19374e-43},
+{"id":"8","name":"wall","Leaves":[{"name":"wall","frequency":0.335145 }],"frequency":0},
+{"id":"9","name":"wall","Leaves":[{"name":"wall","frequency":0.335145 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"orientation_perpendicular"},
+{"id":"1","source":"1","target":"7","factor":"orientation_perpendicular"},
+{"id":"2","source":"3","target":"4","factor":"orientation_parallel"},
+{"id":"3","source":"3","target":"8","factor":"orientation_parallel"},
+{"id":"4","source":"3","target":"9","factor":"orientation_parallel"},
+{"id":"5","source":"1","target":"2","factor":"orientation_parallel"},
+{"id":"6","source":"5","target":"6","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.0746269},
+{"id":"1","value":0.0746269},
+{"id":"2","value":0.0985075},
+{"id":"3","value":0.0985075},
+{"id":"4","value":0.0985075},
+{"id":"5","value":0.0835821},
+{"id":"6","value":0.434389}
+]}

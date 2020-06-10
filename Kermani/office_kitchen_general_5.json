@@ -1,0 +1,24 @@
+{
+"vertices":[
+{"id":"0","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"1","name":"wall","Leaves":[{"name":"wall","frequency":0.689655 }],"frequency":0.5},
+{"id":"2","name":"sink","Leaves":[],"frequency":0.575},
+{"id":"3","name":"table","Leaves":[{"name":"table","frequency":0.952358 }],"frequency":0.9995},
+{"id":"4","name":"floor","Leaves":[],"frequency":0.8},
+{"id":"5","name":"garbage_bin","Leaves":[{"name":"garbage_bin","frequency":0.848485 }],"frequency":0.7},
+{"id":"6","name":"microwave","Leaves":[],"frequency":0.325}
+],
+"rules":[
+{"id":"0","source":"5","target":"5","factor":"proximity"},
+{"id":"1","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"2","source":"3","target":"2","factor":"vertical-support"},
+{"id":"3","source":"1","target":"4","factor":"vertical-support"},
+{"id":"4","source":"0","target":"6","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.1},
+{"id":"1","value":0.15},
+{"id":"2","value":0.2},
+{"id":"3","value":0.3},
+{"id":"4","value":0.2}
+]}

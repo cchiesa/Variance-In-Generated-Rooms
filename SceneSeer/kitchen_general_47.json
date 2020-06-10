@@ -1,0 +1,36 @@
+{
+"vertices":[
+{"id":"0","name":"wall","Leaves":[{"name":"wall","frequency":0.538992 }],"frequency":0.377778},
+{"id":"1","name":"table","Leaves":[],"frequency":0.484444},
+{"id":"2","name":"chair","Leaves":[{"name":"chair","frequency":0.412991 }],"frequency":0.248889}
+],
+"rules":[
+{"id":"0","source":"2","target":"2","factor":"proximity"},
+{"id":"1","source":"2","target":"1","factor":"proximity"},
+{"id":"2","source":"0","target":"0","factor":"proximity"},
+{"id":"3","source":"0","target":"0","factor":"orientation_parallel"},
+{"id":"4","source":"0","target":"2","factor":"orientation_parallel"},
+{"id":"5","source":"1","target":"2","factor":"orientation_parallel"},
+{"id":"6","source":"2","target":"2","factor":"orientation_parallel"},
+{"id":"7","source":"0","target":"2","factor":"orientation_perpendicular"},
+{"id":"8","source":"2","target":"2","factor":"orientation_perpendicular"},
+{"id":"9","source":"0","target":"0","factor":"orientation_perpendicular"},
+{"id":"10","source":"0","target":"0","factor":"symmetry"},
+{"id":"11","source":"2","target":"2","factor":"symmetry"},
+{"id":"12","source":"0","target":"0","factor":"side_to_side"}
+],
+"probability":[
+{"id":"0","value":0.144847},
+{"id":"1","value":0.0891365},
+{"id":"2","value":0.0752089},
+{"id":"3","value":0.125348},
+{"id":"4","value":0.0584958},
+{"id":"5","value":0.0612813},
+{"id":"6","value":0.130919},
+{"id":"7","value":0.0584958},
+{"id":"8","value":0.0835655},
+{"id":"9","value":0.0584958},
+{"id":"10","value":0.0194986},
+{"id":"11","value":0.00835655},
+{"id":"12","value":0.0222841}
+]}

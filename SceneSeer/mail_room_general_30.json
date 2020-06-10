@@ -1,0 +1,18 @@
+{
+"vertices":[
+{"id":"0","name":"table","Leaves":[{"name":"table","frequency":0.7 }],"frequency":0.368421},
+{"id":"1","name":"puncher","Leaves":[],"frequency":0.105263},
+{"id":"2","name":"stapler","Leaves":[],"frequency":0.105263}
+],
+"rules":[
+{"id":"0","source":"1","target":"2","factor":"orientation_parallel"},
+{"id":"1","source":"0","target":"0","factor":"orientation_parallel"},
+{"id":"2","source":"1","target":"0","factor":"orientation_perpendicular"},
+{"id":"3","source":"2","target":"0","factor":"orientation_perpendicular"}
+],
+"probability":[
+{"id":"0","value":0.105263},
+{"id":"1","value":0.105263},
+{"id":"2","value":0.105263},
+{"id":"3","value":0.105263}
+]}

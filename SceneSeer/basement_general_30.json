@@ -1,0 +1,11 @@
+{
+"vertices":[
+{"id":"0","name":"unknown","Leaves":[],"frequency":0.714286},
+{"id":"1","name":"refridgerator","Leaves":[],"frequency":0.285714}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.142857}
+]}

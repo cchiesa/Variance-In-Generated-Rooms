@@ -1,0 +1,11 @@
+{
+"vertices":[
+{"id":"0","name":"cabinet","Leaves":[],"frequency":0.32},
+{"id":"1","name":"bookshelf","Leaves":[],"frequency":0.384615}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"proximity"}
+],
+"probability":[
+{"id":"0","value":0.192308}
+]}

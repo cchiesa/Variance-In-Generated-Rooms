@@ -1,0 +1,27 @@
+{
+"vertices":[
+{"id":"0","name":"wall","Leaves":[{"name":"wall","frequency":0.716433 }],"frequency":0.619835},
+{"id":"1","name":"mirror","Leaves":[],"frequency":0.429752},
+{"id":"2","name":"sink","Leaves":[{"name":"sink","frequency":0.7364 }],"frequency":0.528926},
+{"id":"3","name":"toilet","Leaves":[],"frequency":0.536},
+{"id":"4","name":"bathtub","Leaves":[],"frequency":0.355372},
+{"id":"5","name":"room","Leaves":[],"frequency":0.991736},
+{"id":"6","name":"floor","Leaves":[],"frequency":0.669421},
+{"id":"7","name":"wall","Leaves":[{"name":"wall","frequency":0.716433 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"3","target":"0","factor":"orientation_parallel"},
+{"id":"1","source":"4","target":"0","factor":"orientation_parallel"},
+{"id":"2","source":"3","target":"7","factor":"orientation_parallel"},
+{"id":"3","source":"4","target":"7","factor":"orientation_parallel"},
+{"id":"4","source":"1","target":"2","factor":"proximity"},
+{"id":"5","source":"5","target":"6","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.0986667},
+{"id":"1","value":0.106667},
+{"id":"2","value":0.0986667},
+{"id":"3","value":0.106667},
+{"id":"4","value":0.0773333},
+{"id":"5","value":0.132231}
+]}

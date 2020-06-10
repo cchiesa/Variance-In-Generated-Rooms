@@ -1,0 +1,18 @@
+{
+"vertices":[
+{"id":"0","name":"room","Leaves":[],"frequency":0.96},
+{"id":"1","name":"table","Leaves":[],"frequency":0.62},
+{"id":"2","name":"floor","Leaves":[],"frequency":0.86},
+{"id":"3","name":"desk","Leaves":[],"frequency":0.527273},
+{"id":"4","name":"chair","Leaves":[{"name":"chair","frequency":0.823529 }],"frequency":0.636364}
+],
+"rules":[
+{"id":"0","source":"4","target":"1","factor":"proximity"},
+{"id":"1","source":"0","target":"2","factor":"support"},
+{"id":"2","source":"0","target":"3","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.127273},
+{"id":"1","value":0.4},
+{"id":"2","value":0.12}
+]}

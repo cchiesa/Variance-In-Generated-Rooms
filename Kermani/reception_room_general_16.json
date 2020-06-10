@@ -1,0 +1,33 @@
+{
+"vertices":[
+{"id":"0","name":"chair","Leaves":[{"name":"chair","frequency":0.506826 }],"frequency":0.647059},
+{"id":"1","name":"plate","Leaves":[{"name":"plate","frequency":0.384615 }],"frequency":0.185185},
+{"id":"2","name":"table","Leaves":[{"name":"table","frequency":0.813699 }],"frequency":0.647059},
+{"id":"3","name":"sofa","Leaves":[],"frequency":0.185185},
+{"id":"4","name":"picture","Leaves":[],"frequency":0.588235},
+{"id":"5","name":"floor","Leaves":[],"frequency":0.882353},
+{"id":"6","name":"pillow","Leaves":[],"frequency":0.294118},
+{"id":"7","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"8","name":"chair","Leaves":[{"name":"chair","frequency":0.506826 }],"frequency":6.19374e-43},
+{"id":"9","name":"chair","Leaves":[{"name":"chair","frequency":0.506826 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"0","target":"8","factor":"proximity"},
+{"id":"1","source":"0","target":"9","factor":"proximity"},
+{"id":"2","source":"8","target":"9","factor":"proximity"},
+{"id":"3","source":"1","target":"1","factor":"proximity"},
+{"id":"4","source":"2","target":"3","factor":"orientation_parallel"},
+{"id":"5","source":"4","target":"5","factor":"vertical-support"},
+{"id":"6","source":"5","target":"6","factor":"vertical-support"},
+{"id":"7","source":"7","target":"5","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.37037},
+{"id":"1","value":0.37037},
+{"id":"2","value":0.37037},
+{"id":"3","value":0.185185},
+{"id":"4","value":0.185185},
+{"id":"5","value":0.529412},
+{"id":"6","value":0.117647},
+{"id":"7","value":0.352941}
+]}

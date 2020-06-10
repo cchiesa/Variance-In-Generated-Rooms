@@ -1,0 +1,41 @@
+{
+"vertices":[
+{"id":"0","name":"chair","Leaves":[{"name":"chair","frequency":0.487888 }],"frequency":0.592593},
+{"id":"1","name":"floor","Leaves":[],"frequency":0.814815},
+{"id":"2","name":"bowl","Leaves":[],"frequency":0.740741},
+{"id":"3","name":"table","Leaves":[],"frequency":0.740741},
+{"id":"4","name":"door_knob","Leaves":[],"frequency":0.592593},
+{"id":"5","name":"sink","Leaves":[],"frequency":0.444444},
+{"id":"6","name":"room","Leaves":[],"frequency":0.925926},
+{"id":"7","name":"chair","Leaves":[{"name":"chair","frequency":0.487888 }],"frequency":0},
+{"id":"8","name":"chair","Leaves":[{"name":"chair","frequency":0.487888 }],"frequency":0},
+{"id":"9","name":"chair","Leaves":[{"name":"chair","frequency":0.487888 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"vertical-support"},
+{"id":"1","source":"3","target":"0","factor":"vertical-support"},
+{"id":"2","source":"1","target":"7","factor":"vertical-support"},
+{"id":"3","source":"3","target":"7","factor":"vertical-support"},
+{"id":"4","source":"1","target":"8","factor":"vertical-support"},
+{"id":"5","source":"3","target":"8","factor":"vertical-support"},
+{"id":"6","source":"1","target":"9","factor":"vertical-support"},
+{"id":"7","source":"3","target":"9","factor":"vertical-support"},
+{"id":"8","source":"1","target":"2","factor":"vertical-support"},
+{"id":"9","source":"3","target":"4","factor":"vertical-support"},
+{"id":"10","source":"3","target":"5","factor":"vertical-support"},
+{"id":"11","source":"6","target":"1","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.185185},
+{"id":"1","value":0.148148},
+{"id":"2","value":0.185185},
+{"id":"3","value":0.148148},
+{"id":"4","value":0.185185},
+{"id":"5","value":0.148148},
+{"id":"6","value":0.185185},
+{"id":"7","value":0.148148},
+{"id":"8","value":0.296296},
+{"id":"9","value":0.148148},
+{"id":"10","value":0.111111},
+{"id":"11","value":0.333333}
+]}

@@ -1,0 +1,15 @@
+{
+"vertices":[
+{"id":"0","name":"sink","Leaves":[],"frequency":0.608889},
+{"id":"1","name":"kitchen_cabinet","Leaves":[{"name":"kitchen_cabinet","frequency":0.809917 }],"frequency":0.545961}
+],
+"rules":[
+{"id":"0","source":"1","target":"1","factor":"proximity"},
+{"id":"1","source":"1","target":"0","factor":"orientation_parallel"},
+{"id":"2","source":"1","target":"1","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.0668524},
+{"id":"1","value":0.192201},
+{"id":"2","value":0.10585}
+]}

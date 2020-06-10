@@ -1,0 +1,16 @@
+{
+"vertices":[
+{"id":"0","name":"pillow","Leaves":[{"name":"pillow","frequency":0.552366 }],"frequency":0.477807}
+],
+"rules":[
+{"id":"0","source":"0","target":"0","factor":"proximity"},
+{"id":"1","source":"0","target":"0","factor":"orientation_parallel"},
+{"id":"2","source":"0","target":"0","factor":"orientation_perpendicular"},
+{"id":"3","source":"0","target":"0","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.170515},
+{"id":"1","value":0.0781528},
+{"id":"2","value":0.124334},
+{"id":"3","value":0.104439}
+]}

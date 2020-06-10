@@ -1,0 +1,15 @@
+{
+"vertices":[
+{"id":"0","name":"table","Leaves":[{"name":"table","frequency":0.802521 }],"frequency":0.507979},
+{"id":"1","name":"bookshelf","Leaves":[{"name":"bookshelf","frequency":0.752688 }],"frequency":0.18617}
+],
+"rules":[
+{"id":"0","source":"1","target":"1","factor":"proximity"},
+{"id":"1","source":"0","target":"1","factor":"orientation_parallel"},
+{"id":"2","source":"0","target":"0","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.0611702},
+{"id":"1","value":0.0531915},
+{"id":"2","value":0.101064}
+]}

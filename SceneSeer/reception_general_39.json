@@ -1,0 +1,13 @@
+{
+"vertices":[
+{"id":"0","name":"desk","Leaves":[],"frequency":0.3125},
+{"id":"1","name":"podium","Leaves":[],"frequency":0.3125}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"proximity"},
+{"id":"1","source":"0","target":"1","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.0625},
+{"id":"1","value":0.1875}
+]}

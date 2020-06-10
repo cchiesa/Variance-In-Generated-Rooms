@@ -1,0 +1,27 @@
+{
+"vertices":[
+{"id":"0","name":"room","Leaves":[],"frequency":0.96},
+{"id":"1","name":"floor","Leaves":[],"frequency":0.86},
+{"id":"2","name":"cabinet","Leaves":[],"frequency":0.32},
+{"id":"3","name":"bookshelf","Leaves":[],"frequency":0.4},
+{"id":"4","name":"desk","Leaves":[],"frequency":0.527273},
+{"id":"5","name":"chair","Leaves":[{"name":"chair","frequency":0.823529 }],"frequency":0.636364}
+],
+"rules":[
+{"id":"0","source":"5","target":"4","factor":"proximity"},
+{"id":"1","source":"3","target":"5","factor":"proximity"},
+{"id":"2","source":"4","target":"5","factor":"orientation_parallel"},
+{"id":"3","source":"5","target":"2","factor":"orientation_parallel"},
+{"id":"4","source":"4","target":"3","factor":"orientation_perpendicular"},
+{"id":"5","source":"0","target":"1","factor":"support"},
+{"id":"6","source":"0","target":"4","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.318182},
+{"id":"1","value":0.136364},
+{"id":"2","value":0.345455},
+{"id":"3","value":0.0818182},
+{"id":"4","value":0.0636364},
+{"id":"5","value":0.4},
+{"id":"6","value":0.12}
+]}

@@ -1,0 +1,32 @@
+{
+"vertices":[
+{"id":"0","name":"stove_burner","Leaves":[],"frequency":0.370757},
+{"id":"1","name":"room","Leaves":[],"frequency":0.989556},
+{"id":"2","name":"wall","Leaves":[{"name":"wall","frequency":0.575116 }],"frequency":0.819843},
+{"id":"3","name":"box","Leaves":[],"frequency":0.308094},
+{"id":"4","name":"pillow","Leaves":[{"name":"pillow","frequency":0.552366 }],"frequency":0.477807},
+{"id":"5","name":"floor","Leaves":[],"frequency":0.885117},
+{"id":"6","name":"bed","Leaves":[{"name":"bed","frequency":0.922727 }],"frequency":0.721137}
+],
+"rules":[
+{"id":"0","source":"3","target":"2","factor":"proximity"},
+{"id":"1","source":"2","target":"6","factor":"orientation_parallel"},
+{"id":"2","source":"4","target":"4","factor":"orientation_perpendicular"},
+{"id":"3","source":"2","target":"6","factor":"orientation_perpendicular"},
+{"id":"4","source":"1","target":"2","factor":"vertical-support"},
+{"id":"5","source":"5","target":"2","factor":"vertical-support"},
+{"id":"6","source":"5","target":"0","factor":"vertical-support"},
+{"id":"7","source":"5","target":"6","factor":"support"},
+{"id":"8","source":"2","target":"4","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.0657194},
+{"id":"1","value":0.136767},
+{"id":"2","value":0.124334},
+{"id":"3","value":0.117229},
+{"id":"4","value":0.637076},
+{"id":"5","value":0.138381},
+{"id":"6","value":0.133159},
+{"id":"7","value":0.631854},
+{"id":"8","value":0.0966057}
+]}

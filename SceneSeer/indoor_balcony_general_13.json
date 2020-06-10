@@ -1,0 +1,14 @@
+{
+"vertices":[
+{"id":"0","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"1","name":"picture","Leaves":[],"frequency":0.9995},
+{"id":"2","name":"ottoman","Leaves":[{"name":"ottoman","frequency":0.666555 }],"frequency":0.9995}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"vertical-support"},
+{"id":"1","source":"0","target":"2","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":1},
+{"id":"1","value":0.5}
+]}

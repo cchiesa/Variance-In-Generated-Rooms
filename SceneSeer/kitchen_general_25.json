@@ -1,0 +1,10 @@
+{
+"vertices":[
+{"id":"0","name":"kitchen_counter","Leaves":[{"name":"kitchen_counter","frequency":0.891526 }],"frequency":0.732591}
+],
+"rules":[
+{"id":"0","source":"0","target":"0","factor":"orientation_perpendicular"}
+],
+"probability":[
+{"id":"0","value":0.0557103}
+]}

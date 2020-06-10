@@ -1,0 +1,13 @@
+{
+"vertices":[
+{"id":"0","name":"books","Leaves":[{"name":"books","frequency":0.470588 }],"frequency":0.222222},
+{"id":"1","name":"books","Leaves":[{"name":"books","frequency":0.470588 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"proximity"},
+{"id":"1","source":"0","target":"1","factor":"orientation_parallel"}
+],
+"probability":[
+{"id":"0","value":0.138889},
+{"id":"1","value":0.194444}
+]}

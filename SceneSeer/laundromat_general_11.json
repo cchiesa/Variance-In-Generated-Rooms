@@ -1,0 +1,11 @@
+{
+"vertices":[
+{"id":"0","name":"tray","Leaves":[],"frequency":0.285714},
+{"id":"1","name":"dryer","Leaves":[],"frequency":0.428571}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"orientation_perpendicular"}
+],
+"probability":[
+{"id":"0","value":0.285714}
+]}

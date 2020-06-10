@@ -1,0 +1,14 @@
+{
+"vertices":[
+{"id":"0","name":"floor","Leaves":[],"frequency":0.9995},
+{"id":"1","name":"door_knob","Leaves":[],"frequency":0.333333},
+{"id":"2","name":"cabinet","Leaves":[],"frequency":0.9995}
+],
+"rules":[
+{"id":"0","source":"1","target":"2","factor":"vertical-support"},
+{"id":"1","source":"1","target":"0","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.333333},
+{"id":"1","value":0.333333}
+]}

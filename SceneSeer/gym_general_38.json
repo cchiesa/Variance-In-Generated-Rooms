@@ -1,0 +1,13 @@
+{
+"vertices":[
+{"id":"0","name":"box","Leaves":[],"frequency":0.666667},
+{"id":"1","name":"pillow","Leaves":[{"name":"pillow","frequency":0.666667 }],"frequency":0.666667}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"proximity"},
+{"id":"1","source":"1","target":"1","factor":"proximity"}
+],
+"probability":[
+{"id":"0","value":0.333333},
+{"id":"1","value":0.333333}
+]}

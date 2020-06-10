@@ -1,0 +1,21 @@
+{
+"vertices":[
+{"id":"0","name":"bottle.n.01","Leaves":[{"name":"bottle","frequency":1 },{"name":"thermos","frequency":1 },{"name":"laundry_detergent_jug","frequency":1 },{"name":"poison","frequency":1 }],"frequency":0.333333},
+{"id":"1","name":"table","Leaves":[{"name":"table","frequency":0.861538 }],"frequency":0.666667},
+{"id":"2","name":"scanner","Leaves":[],"frequency":0.482143},
+{"id":"3","name":"refridgerator","Leaves":[],"frequency":0.666667}
+],
+"rules":[
+{"id":"0","source":"2","target":"1","factor":"proximity"},
+{"id":"1","source":"1","target":"2","factor":"orientation_parallel"},
+{"id":"2","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"3","source":"3","target":"0","factor":"vertical-support"},
+{"id":"4","source":"3","target":"1","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.0714286},
+{"id":"1","value":0.178571},
+{"id":"2","value":0.0892857},
+{"id":"3","value":0.333333},
+{"id":"4","value":0.333333}
+]}

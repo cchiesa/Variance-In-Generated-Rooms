@@ -1,0 +1,42 @@
+{
+"vertices":[
+{"id":"0","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"1","name":"wall","Leaves":[{"name":"wall","frequency":0.526316 }],"frequency":0.37037},
+{"id":"2","name":"table","Leaves":[{"name":"table","frequency":0.813699 }],"frequency":0.647059},
+{"id":"3","name":"picture","Leaves":[],"frequency":0.588235},
+{"id":"4","name":"floor","Leaves":[],"frequency":0.882353},
+{"id":"5","name":"garbage_bin","Leaves":[],"frequency":0.647059},
+{"id":"6","name":"chair","Leaves":[{"name":"chair","frequency":0.506826 }],"frequency":0.647059},
+{"id":"7","name":"sofa","Leaves":[],"frequency":0.185185},
+{"id":"8","name":"pot","Leaves":[],"frequency":0.294118}
+],
+"rules":[
+{"id":"0","source":"6","target":"2","factor":"proximity"},
+{"id":"1","source":"6","target":"6","factor":"orientation_parallel"},
+{"id":"2","source":"2","target":"2","factor":"orientation_parallel"},
+{"id":"3","source":"2","target":"6","factor":"orientation_parallel"},
+{"id":"4","source":"1","target":"2","factor":"orientation_parallel"},
+{"id":"5","source":"1","target":"7","factor":"orientation_parallel"},
+{"id":"6","source":"6","target":"6","factor":"orientation_perpendicular"},
+{"id":"7","source":"3","target":"4","factor":"vertical-support"},
+{"id":"8","source":"4","target":"8","factor":"vertical-support"},
+{"id":"9","source":"2","target":"4","factor":"vertical-support"},
+{"id":"10","source":"0","target":"5","factor":"support"},
+{"id":"11","source":"0","target":"4","factor":"support"},
+{"id":"12","source":"0","target":"2","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.296296},
+{"id":"1","value":0.259259},
+{"id":"2","value":0.148148},
+{"id":"3","value":0.111111},
+{"id":"4","value":0.259259},
+{"id":"5","value":0.185185},
+{"id":"6","value":0.148148},
+{"id":"7","value":0.529412},
+{"id":"8","value":0.117647},
+{"id":"9","value":0.294118},
+{"id":"10","value":0.117647},
+{"id":"11","value":0.352941},
+{"id":"12","value":0.176471}
+]}

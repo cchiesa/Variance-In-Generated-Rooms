@@ -1,0 +1,23 @@
+{
+"vertices":[
+{"id":"0","name":"table","Leaves":[],"frequency":0.9995},
+{"id":"1","name":"floor","Leaves":[],"frequency":0.5},
+{"id":"2","name":"lamp","Leaves":[],"frequency":0.5},
+{"id":"3","name":"railing","Leaves":[],"frequency":0.5},
+{"id":"4","name":"ottoman","Leaves":[{"name":"ottoman","frequency":0.666555 }],"frequency":0.9995},
+{"id":"5","name":"faucet","Leaves":[],"frequency":0.5}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"vertical-support"},
+{"id":"1","source":"0","target":"5","factor":"vertical-support"},
+{"id":"2","source":"4","target":"2","factor":"vertical-support"},
+{"id":"3","source":"0","target":"4","factor":"vertical-support"},
+{"id":"4","source":"0","target":"3","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.5},
+{"id":"1","value":0.5},
+{"id":"2","value":0.5},
+{"id":"3","value":0.5},
+{"id":"4","value":0.5}
+]}

@@ -1,0 +1,22 @@
+{
+"vertices":[
+{"id":"0","name":"wall","Leaves":[{"name":"wall","frequency":0.716433 }],"frequency":0.619835},
+{"id":"1","name":"floor","Leaves":[],"frequency":0.669421},
+{"id":"2","name":"wall","Leaves":[{"name":"wall","frequency":0.716433 }],"frequency":6.19374e-43}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"vertical-support"},
+{"id":"1","source":"0","target":"2","factor":"proximity"},
+{"id":"2","source":"0","target":"2","factor":"orientation_parallel"},
+{"id":"3","source":"0","target":"2","factor":"orientation_perpendicular"},
+{"id":"4","source":"0","target":"2","factor":"symmetry"},
+{"id":"5","source":"1","target":"2","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.190083},
+{"id":"1","value":0.0506667},
+{"id":"2","value":0.136},
+{"id":"3","value":0.0933333},
+{"id":"4","value":0.0106667},
+{"id":"5","value":0.190083}
+]}

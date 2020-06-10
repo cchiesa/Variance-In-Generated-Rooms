@@ -1,0 +1,11 @@
+{
+"vertices":[
+{"id":"0","name":"unknown","Leaves":[],"frequency":0.25},
+{"id":"1","name":"paper_towel_dispenser","Leaves":[],"frequency":0.75}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.25}
+]}

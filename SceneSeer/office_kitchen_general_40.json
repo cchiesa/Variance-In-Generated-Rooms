@@ -1,0 +1,8 @@
+{
+"vertices":[
+{"id":"0","name":"bottle.n.01","Leaves":[{"name":"bottle","frequency":1 },{"name":"thermos","frequency":1 },{"name":"laundry_detergent_jug","frequency":1 },{"name":"poison","frequency":1 }],"frequency":0.4}
+],
+"rules":[
+],
+"probability":[
+]}

@@ -1,0 +1,14 @@
+{
+"vertices":[
+{"id":"0","name":"paper","Leaves":[{"name":"money","frequency":1 },{"name":"motherlode","frequency":1 }],"frequency":0.66},
+{"id":"1","name":"wall","Leaves":[],"frequency":0.38},
+{"id":"2","name":"floor","Leaves":[],"frequency":0.86}
+],
+"rules":[
+{"id":"0","source":"2","target":"1","factor":"vertical-support"},
+{"id":"1","source":"0","target":"2","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.24},
+{"id":"1","value":0.12}
+]}

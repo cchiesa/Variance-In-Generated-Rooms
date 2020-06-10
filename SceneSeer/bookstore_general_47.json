@@ -1,0 +1,14 @@
+{
+"vertices":[
+{"id":"0","name":"shelf","Leaves":[{"name":"shelf","frequency":0.652174 }],"frequency":0.416667}
+],
+"rules":[
+{"id":"0","source":"0","target":"0","factor":"proximity"},
+{"id":"1","source":"0","target":"0","factor":"orientation_parallel"},
+{"id":"2","source":"0","target":"0","factor":"symmetry"}
+],
+"probability":[
+{"id":"0","value":0.138889},
+{"id":"1","value":0.0833333},
+{"id":"2","value":0.0833333}
+]}

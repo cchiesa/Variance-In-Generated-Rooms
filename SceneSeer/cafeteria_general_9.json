@@ -1,0 +1,10 @@
+{
+"vertices":[
+{"id":"0","name":"cups","Leaves":[{"name":"cups","frequency":0.4 }],"frequency":0.153846}
+],
+"rules":[
+{"id":"0","source":"0","target":"0","factor":"proximity"}
+],
+"probability":[
+{"id":"0","value":0.0769231}
+]}

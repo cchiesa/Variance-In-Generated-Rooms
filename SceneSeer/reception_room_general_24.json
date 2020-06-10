@@ -1,0 +1,17 @@
+{
+"vertices":[
+{"id":"0","name":"counter","Leaves":[],"frequency":0.185185},
+{"id":"1","name":"plate","Leaves":[{"name":"plate","frequency":0.384615 }],"frequency":0.185185}
+],
+"rules":[
+{"id":"0","source":"1","target":"1","factor":"proximity"},
+{"id":"1","source":"0","target":"1","factor":"proximity"},
+{"id":"2","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"3","source":"1","target":"1","factor":"symmetry"}
+],
+"probability":[
+{"id":"0","value":0.185185},
+{"id":"1","value":0.0740741},
+{"id":"2","value":0.185185},
+{"id":"3","value":0.0740741}
+]}

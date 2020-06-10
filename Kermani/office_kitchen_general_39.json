@@ -1,0 +1,32 @@
+{
+"vertices":[
+{"id":"0","name":"stove_burner","Leaves":[],"frequency":0.6},
+{"id":"1","name":"bottle.n.01","Leaves":[{"name":"bottle","frequency":1 },{"name":"thermos","frequency":1 },{"name":"laundry_detergent_jug","frequency":1 },{"name":"poison","frequency":1 }],"frequency":0.4},
+{"id":"2","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"3","name":"wall","Leaves":[{"name":"wall","frequency":0.689655 }],"frequency":0.5},
+{"id":"4","name":"box","Leaves":[],"frequency":0.4},
+{"id":"5","name":"sink","Leaves":[],"frequency":0.575},
+{"id":"6","name":"floor","Leaves":[],"frequency":0.8},
+{"id":"7","name":"kitchen_counter","Leaves":[],"frequency":0.575},
+{"id":"8","name":"faucet","Leaves":[],"frequency":0.4},
+{"id":"9","name":"refridgerator","Leaves":[],"frequency":0.7},
+{"id":"10","name":"pot","Leaves":[],"frequency":0.4}
+],
+"rules":[
+{"id":"0","source":"3","target":"5","factor":"orientation_perpendicular"},
+{"id":"1","source":"4","target":"7","factor":"orientation_perpendicular"},
+{"id":"2","source":"8","target":"1","factor":"vertical-support"},
+{"id":"3","source":"8","target":"6","factor":"vertical-support"},
+{"id":"4","source":"8","target":"9","factor":"vertical-support"},
+{"id":"5","source":"5","target":"10","factor":"vertical-support"},
+{"id":"6","source":"2","target":"0","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.075},
+{"id":"1","value":0.075},
+{"id":"2","value":0.3},
+{"id":"3","value":0.3},
+{"id":"4","value":0.3},
+{"id":"5","value":0.2},
+{"id":"6","value":0.2}
+]}

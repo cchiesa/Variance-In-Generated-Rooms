@@ -1,0 +1,32 @@
+{
+"vertices":[
+{"id":"0","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"1","name":"wall","Leaves":[{"name":"wall","frequency":0.689655 }],"frequency":0.5},
+{"id":"2","name":"box","Leaves":[],"frequency":0.4},
+{"id":"3","name":"sink","Leaves":[],"frequency":0.575},
+{"id":"4","name":"table","Leaves":[{"name":"table","frequency":0.952358 }],"frequency":0.9995},
+{"id":"5","name":"floor","Leaves":[],"frequency":0.8},
+{"id":"6","name":"kitchen_counter","Leaves":[],"frequency":0.575},
+{"id":"7","name":"garbage_bin","Leaves":[{"name":"garbage_bin","frequency":0.848485 }],"frequency":0.7},
+{"id":"8","name":"faucet","Leaves":[],"frequency":0.4},
+{"id":"9","name":"microwave","Leaves":[],"frequency":0.325},
+{"id":"10","name":"refridgerator","Leaves":[],"frequency":0.7}
+],
+"rules":[
+{"id":"0","source":"6","target":"3","factor":"orientation_parallel"},
+{"id":"1","source":"2","target":"1","factor":"orientation_parallel"},
+{"id":"2","source":"8","target":"5","factor":"vertical-support"},
+{"id":"3","source":"7","target":"9","factor":"vertical-support"},
+{"id":"4","source":"9","target":"4","factor":"vertical-support"},
+{"id":"5","source":"10","target":"4","factor":"vertical-support"},
+{"id":"6","source":"0","target":"9","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.375},
+{"id":"1","value":0.075},
+{"id":"2","value":0.3},
+{"id":"3","value":0.3},
+{"id":"4","value":0.1},
+{"id":"5","value":0.1},
+{"id":"6","value":0.2}
+]}

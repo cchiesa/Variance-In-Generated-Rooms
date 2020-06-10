@@ -1,0 +1,23 @@
+{
+"vertices":[
+{"id":"0","name":"pillow","Leaves":[{"name":"pillow","frequency":0.282247 }],"frequency":0.37037},
+{"id":"1","name":"lamp","Leaves":[{"name":"lamp","frequency":0.715789 }],"frequency":0.282451}
+],
+"rules":[
+{"id":"0","source":"0","target":"0","factor":"proximity"},
+{"id":"1","source":"1","target":"0","factor":"orientation_parallel"},
+{"id":"2","source":"0","target":"0","factor":"orientation_parallel"},
+{"id":"3","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"4","source":"0","target":"1","factor":"orientation_parallel"},
+{"id":"5","source":"0","target":"0","factor":"symmetry"},
+{"id":"6","source":"0","target":"0","factor":"side_to_side"}
+],
+"probability":[
+{"id":"0","value":0.267913},
+{"id":"1","value":0.113188},
+{"id":"2","value":0.282451},
+{"id":"3","value":0.0913811},
+{"id":"4","value":0.130841},
+{"id":"5","value":0.0124611},
+{"id":"6","value":0.0134995}
+]}

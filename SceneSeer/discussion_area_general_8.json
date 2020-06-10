@@ -1,0 +1,16 @@
+{
+"vertices":[
+{"id":"0","name":"chair","Leaves":[{"name":"chair","frequency":0.306035 }],"frequency":0.731959}
+],
+"rules":[
+{"id":"0","source":"0","target":"0","factor":"proximity"},
+{"id":"1","source":"0","target":"0","factor":"orientation_parallel"},
+{"id":"2","source":"0","target":"0","factor":"orientation_perpendicular"},
+{"id":"3","source":"0","target":"0","factor":"symmetry"}
+],
+"probability":[
+{"id":"0","value":0.659794},
+{"id":"1","value":0.515464},
+{"id":"2","value":0.278351},
+{"id":"3","value":0.0515464}
+]}

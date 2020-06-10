@@ -1,0 +1,44 @@
+{
+"vertices":[
+{"id":"0","name":"chair","Leaves":[{"name":"chair","frequency":0.545454 }],"frequency":0.580645},
+{"id":"1","name":"cabinet","Leaves":[],"frequency":0.387097},
+{"id":"2","name":"wall","Leaves":[{"name":"wall","frequency":0.368421 }],"frequency":0.677419},
+{"id":"3","name":"box","Leaves":[{"name":"box","frequency":0.7 }],"frequency":0.451613},
+{"id":"4","name":"table","Leaves":[],"frequency":0.645161},
+{"id":"5","name":"tv","Leaves":[],"frequency":0.225806},
+{"id":"6","name":"sofa","Leaves":[],"frequency":0.354839},
+{"id":"7","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"8","name":"floor","Leaves":[],"frequency":0.9995},
+{"id":"9","name":"chair","Leaves":[{"name":"chair","frequency":0.545454 }],"frequency":0},
+{"id":"10","name":"chair","Leaves":[{"name":"chair","frequency":0.545454 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"proximity"},
+{"id":"1","source":"0","target":"4","factor":"orientation_parallel"},
+{"id":"2","source":"1","target":"9","factor":"proximity"},
+{"id":"3","source":"9","target":"4","factor":"orientation_parallel"},
+{"id":"4","source":"1","target":"10","factor":"proximity"},
+{"id":"5","source":"10","target":"4","factor":"orientation_parallel"},
+{"id":"6","source":"1","target":"2","factor":"proximity"},
+{"id":"7","source":"3","target":"3","factor":"orientation_parallel"},
+{"id":"8","source":"3","target":"4","factor":"orientation_parallel"},
+{"id":"9","source":"2","target":"5","factor":"orientation_parallel"},
+{"id":"10","source":"2","target":"6","factor":"orientation_parallel"},
+{"id":"11","source":"2","target":"2","factor":"support"},
+{"id":"12","source":"7","target":"8","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.0967742},
+{"id":"1","value":0.0967742},
+{"id":"2","value":0.0967742},
+{"id":"3","value":0.0967742},
+{"id":"4","value":0.0967742},
+{"id":"5","value":0.0967742},
+{"id":"6","value":0.0645161},
+{"id":"7","value":0.580645},
+{"id":"8","value":0.193548},
+{"id":"9","value":0.16129},
+{"id":"10","value":0.225806},
+{"id":"11","value":0.580645},
+{"id":"12","value":0.129032}
+]}

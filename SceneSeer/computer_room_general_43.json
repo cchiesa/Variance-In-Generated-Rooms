@@ -1,0 +1,19 @@
+{
+"vertices":[
+{"id":"0","name":"cpu","Leaves":[{"name":"cpu","frequency":0.588237 }],"frequency":0.143885},
+{"id":"1","name":"monitor","Leaves":[{"name":"monitor","frequency":0.449275 }],"frequency":0.446043}
+],
+"rules":[
+{"id":"0","source":"1","target":"1","factor":"proximity"},
+{"id":"1","source":"0","target":"1","factor":"proximity"},
+{"id":"2","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"3","source":"0","target":"0","factor":"orientation_parallel"},
+{"id":"4","source":"1","target":"1","factor":"symmetry"}
+],
+"probability":[
+{"id":"0","value":0.0791367},
+{"id":"1","value":0.0503597},
+{"id":"2","value":0.273381},
+{"id":"3","value":0.0791367},
+{"id":"4","value":0.0215827}
+]}

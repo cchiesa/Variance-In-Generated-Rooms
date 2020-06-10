@@ -1,0 +1,11 @@
+{
+"vertices":[
+{"id":"0","name":"paper","Leaves":[{"name":"money","frequency":1 },{"name":"motherlode","frequency":1 }],"frequency":0.666667},
+{"id":"1","name":"garbage_bin","Leaves":[],"frequency":0.666667}
+],
+"rules":[
+{"id":"0","source":"0","target":"1","factor":"vertical-support"}
+],
+"probability":[
+{"id":"0","value":0.333333}
+]}

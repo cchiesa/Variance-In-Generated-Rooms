@@ -1,0 +1,42 @@
+{
+"vertices":[
+{"id":"0","name":"chair","Leaves":[{"name":"chair","frequency":0.375 }],"frequency":0.0833333},
+{"id":"1","name":"bookshelf","Leaves":[{"name":"bookshelf","frequency":0.545454 }],"frequency":0.333333},
+{"id":"2","name":"bookstand","Leaves":[{"name":"bookstand","frequency":0.7 }],"frequency":0.194444},
+{"id":"3","name":"box","Leaves":[{"name":"box","frequency":0.357143 }],"frequency":0.277778},
+{"id":"4","name":"clothing_rack","Leaves":[{"name":"clothing_rack","frequency":0.588235 }],"frequency":0.277778},
+{"id":"5","name":"books","Leaves":[{"name":"books","frequency":0.470588 }],"frequency":0.222222},
+{"id":"6","name":"shelf","Leaves":[{"name":"shelf","frequency":0.652174 }],"frequency":0.416667},
+{"id":"7","name":"table","Leaves":[{"name":"table","frequency":0.76 }],"frequency":0.527778},
+{"id":"8","name":"room","Leaves":[],"frequency":0.9995},
+{"id":"9","name":"shelves","Leaves":[],"frequency":0.388889},
+{"id":"10","name":"chair","Leaves":[{"name":"chair","frequency":0.375 }],"frequency":3.59726e-12},
+{"id":"11","name":"bookshelf","Leaves":[{"name":"bookshelf","frequency":0.545454 }],"frequency":2.57854e-09},
+{"id":"12","name":"clothing_rack","Leaves":[{"name":"clothing_rack","frequency":0.588235 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"7","target":"0","factor":"orientation_perpendicular"},
+{"id":"1","source":"7","target":"10","factor":"orientation_perpendicular"},
+{"id":"2","source":"1","target":"2","factor":"proximity"},
+{"id":"3","source":"11","target":"2","factor":"proximity"},
+{"id":"4","source":"6","target":"4","factor":"orientation_parallel"},
+{"id":"5","source":"4","target":"12","factor":"proximity"},
+{"id":"6","source":"6","target":"12","factor":"orientation_parallel"},
+{"id":"7","source":"3","target":"3","factor":"proximity"},
+{"id":"8","source":"2","target":"2","factor":"proximity"},
+{"id":"9","source":"5","target":"5","factor":"orientation_parallel"},
+{"id":"10","source":"8","target":"9","factor":"horizontal-support"}
+],
+"probability":[
+{"id":"0","value":0.0833333},
+{"id":"1","value":0.0833333},
+{"id":"2","value":0.194444},
+{"id":"3","value":0.194444},
+{"id":"4","value":0.111111},
+{"id":"5","value":0.111111},
+{"id":"6","value":0.111111},
+{"id":"7","value":0.194444},
+{"id":"8","value":0.0555556},
+{"id":"9","value":0.194444},
+{"id":"10","value":0.0277778}
+]}
