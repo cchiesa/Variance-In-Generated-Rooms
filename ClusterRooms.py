@@ -19,11 +19,11 @@ def compare(room, center):
             return False
     return True
 
-df = pd.read_csv('GenRoomsBothKERMANIandSCENESEERBedroomsBathroomsLivingRoomsObjectsSUNRGBD.csv')
+df = pd.read_csv('GenRoomsCUSTOMObjectsSUNRGBD.csv')
 # make data frame
 print(df)
 
-file = open("GenRoomsBothKERMANIandSCENESEERBedroomsBathroomsLivingRoomsObjectsRoomTypeIndexSUNRGBD.txt","r") #open up indexes
+file = open("GenRoomsCUSTOMObjectsRoomTypeIndexSUNRGBD.txt","r") #open up indexes
 roomType = []
 while True: #read in roomtypes until end of file
     roomLine = file.readline() #room type in qoutes
@@ -36,7 +36,7 @@ while True: #read in roomtypes until end of file
 file.close()
 
 #read in rooms for checking the center index later
-f = open("GenRoomsBothKERMANIandSCENESEERBedroomsBathroomsLivingRoomsObjectsSUNRGBD.txt")
+f = open("GenRoomsCUSTOMObjectsSUNRGBD.txt")
 rooms = []
 object = f.readline()
 while True: #read in rooms until end of file
@@ -53,7 +53,7 @@ file.close()
 # data = df.sample(frac = 0.003)
 data = df
 
-km = KModes(n_clusters=9, init='random', n_init=1, verbose=1)
+km = KModes(n_clusters=44, init='random', n_init=1, verbose=1)
 
 
 clusters = km.fit(data)

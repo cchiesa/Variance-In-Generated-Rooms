@@ -1,0 +1,1 @@
+{"vertices": [{"id": "0", "name": "sofa", "frequency": 1.0}, {"id": "1", "name": "sofa_1", "frequency": 1.0}], "rules": [{"id": "0", "factor": "orientation_parallel", "source": "0", "target": "1"}, {"id": "1", "factor": "proximity", "source": "0", "target": "0"}], "probability": [{"id": "0", "frequency": 1.0}, {"id": "1", "frequency": 1.0}]}

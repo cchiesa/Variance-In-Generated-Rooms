@@ -9,7 +9,7 @@ from warnings import warn
 
 # read in centers into list
 # file = open("FisherCentersObjectPresence.txt","r") #change file name for centers you want to measure
-file = open("KermaniSceneSeerObjectPresenceBedroomsBathroomsLivingRooms9CentersSUNRGBD.txt", "r")
+file = open("CustomCentersObjectPresence44CentersSUNRGBD.txt", "r")
 centers = []
 
 while True:  # read in centers until end of file
