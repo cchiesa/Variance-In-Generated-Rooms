@@ -62,18 +62,16 @@ def cluster(csv_file, index_file, genrooms_file, out_file):
     km = KModes(n_clusters=9, init='random', n_init=1, verbose=1)
 
     clusters = km.fit_predict(data)
-    print(type(clusters[0]))
-    print(type(data[0]))
-    print(data[0])
+    # print(type(clusters[0]))
+    # print(type(data[0]))
+    print(type(data))
     # go thru points make dist matrix for each
     cluster_distances = [[], [], [], [], [], [], [], [], []]
     for i in range(0, len(clusters)):
         distances = []
         for j in range(0, len(clusters)):
             if(clusters[i] == clusters[j]):  # if in same cluster
-                distances.append(jaccard_score(
-                    np.asarray(data[i]), np.asarray(data[j])))
-        cluster_distances[cluster[i]].append(distances)
+                distances.append(jaccard_score(data.loc[i], data.loc[j]))
 
     # Print the cluster centroids
     # print(km.cluster_centroids_)
