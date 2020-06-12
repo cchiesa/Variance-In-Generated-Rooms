@@ -1,0 +1,36 @@
+{
+"vertices":[
+{"id":"0","name":"wall","Leaves":[{"name":"wall","frequency":0.575116 }],"frequency":0.819843},
+{"id":"1","name":"bed","Leaves":[{"name":"bed","frequency":0.922727 }],"frequency":0.721137},
+{"id":"2","name":"chair","Leaves":[],"frequency":0.291297}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"proximity"},
+{"id":"1","source":"1","target":"2","factor":"proximity"},
+{"id":"2","source":"0","target":"0","factor":"proximity"},
+{"id":"3","source":"1","target":"1","factor":"proximity"},
+{"id":"4","source":"1","target":"2","factor":"orientation_parallel"},
+{"id":"5","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"6","source":"0","target":"0","factor":"orientation_parallel"},
+{"id":"7","source":"0","target":"1","factor":"orientation_parallel"},
+{"id":"8","source":"1","target":"0","factor":"orientation_parallel"},
+{"id":"9","source":"0","target":"2","factor":"orientation_parallel"},
+{"id":"10","source":"0","target":"1","factor":"orientation_perpendicular"},
+{"id":"11","source":"1","target":"0","factor":"side_to_side"},
+{"id":"12","source":"0","target":"0","factor":"side_to_side"}
+],
+"probability":[
+{"id":"0","value":0.222025},
+{"id":"1","value":0.158082},
+{"id":"2","value":0.0817052},
+{"id":"3","value":0.0586146},
+{"id":"4","value":0.0799289},
+{"id":"5","value":0.0639432},
+{"id":"6","value":0.206039},
+{"id":"7","value":0.136767},
+{"id":"8","value":0.115453},
+{"id":"9","value":0.0568384},
+{"id":"10","value":0.117229},
+{"id":"11","value":0.0071048},
+{"id":"12","value":0.0071048}
+]}

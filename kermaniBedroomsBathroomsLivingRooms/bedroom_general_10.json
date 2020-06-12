@@ -1,0 +1,41 @@
+{
+"vertices":[
+{"id":"0","name":"wall","Leaves":[{"name":"wall","frequency":0.575116 }],"frequency":0.819843},
+{"id":"1","name":"bed","Leaves":[{"name":"bed","frequency":0.922727 }],"frequency":0.721137},
+{"id":"2","name":"pillow","Leaves":[{"name":"pillow","frequency":0.552366 }],"frequency":0.477807},
+{"id":"3","name":"night_stand","Leaves":[],"frequency":0.347258},
+{"id":"4","name":"room","Leaves":[],"frequency":0.989556},
+{"id":"5","name":"floor","Leaves":[],"frequency":0.885117},
+{"id":"6","name":"unknown","Leaves":[],"frequency":0.362924},
+{"id":"7","name":"wall","Leaves":[{"name":"wall","frequency":0.575116 }],"frequency":0}
+],
+"rules":[
+{"id":"0","source":"1","target":"0","factor":"proximity"},
+{"id":"1","source":"2","target":"0","factor":"proximity"},
+{"id":"2","source":"2","target":"0","factor":"orientation_parallel"},
+{"id":"3","source":"0","target":"3","factor":"orientation_parallel"},
+{"id":"4","source":"4","target":"0","factor":"vertical-support"},
+{"id":"5","source":"1","target":"7","factor":"proximity"},
+{"id":"6","source":"2","target":"7","factor":"proximity"},
+{"id":"7","source":"2","target":"7","factor":"orientation_parallel"},
+{"id":"8","source":"7","target":"3","factor":"orientation_parallel"},
+{"id":"9","source":"4","target":"7","factor":"vertical-support"},
+{"id":"10","source":"2","target":"2","factor":"proximity"},
+{"id":"11","source":"5","target":"6","factor":"vertical-support"},
+{"id":"12","source":"5","target":"1","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.222025},
+{"id":"1","value":0.110124},
+{"id":"2","value":0.0941385},
+{"id":"3","value":0.0817052},
+{"id":"4","value":0.637076},
+{"id":"5","value":0.222025},
+{"id":"6","value":0.110124},
+{"id":"7","value":0.0941385},
+{"id":"8","value":0.0817052},
+{"id":"9","value":0.637076},
+{"id":"10","value":0.170515},
+{"id":"11","value":0.177546},
+{"id":"12","value":0.631854}
+]}

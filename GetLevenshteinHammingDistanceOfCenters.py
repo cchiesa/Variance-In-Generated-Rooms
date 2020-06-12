@@ -1,4 +1,5 @@
 from Levenshtein import *
+from sklearn.metrics import jaccard_score
 from warnings import warn
 
 # TEMPLATE
@@ -37,6 +38,7 @@ for i in range(
     distances = []  # new hamming distances
     for d in range(centerPos, len(centers)):
         if i != d:  # make sure not to compare a center to itself
+            # distances.append(jaccard_score([int(val) for val in centers[i]], [int(val) for val in centers[d]]))
             distances.append(hamming(centers[i], centers[d]))
             totalComparisons = totalComparisons + 1
             # print(str(i) +" and "+str(d))

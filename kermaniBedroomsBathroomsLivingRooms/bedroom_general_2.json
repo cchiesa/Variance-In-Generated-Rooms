@@ -1,0 +1,26 @@
+{
+"vertices":[
+{"id":"0","name":"room","Leaves":[],"frequency":0.989556},
+{"id":"1","name":"wall","Leaves":[{"name":"wall","frequency":0.575116 }],"frequency":0.819843},
+{"id":"2","name":"pillow","Leaves":[{"name":"pillow","frequency":0.552366 }],"frequency":0.477807},
+{"id":"3","name":"floor","Leaves":[],"frequency":0.885117},
+{"id":"4","name":"garbage_bin","Leaves":[],"frequency":0.334204},
+{"id":"5","name":"bed","Leaves":[{"name":"bed","frequency":0.922727 }],"frequency":0.721137},
+{"id":"6","name":"refridgerator","Leaves":[],"frequency":0.373368}
+],
+"rules":[
+{"id":"0","source":"1","target":"5","factor":"orientation_parallel"},
+{"id":"1","source":"2","target":"2","factor":"vertical-support"},
+{"id":"2","source":"0","target":"1","factor":"vertical-support"},
+{"id":"3","source":"3","target":"4","factor":"vertical-support"},
+{"id":"4","source":"3","target":"6","factor":"vertical-support"},
+{"id":"5","source":"3","target":"5","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.136767},
+{"id":"1","value":0.104439},
+{"id":"2","value":0.637076},
+{"id":"3","value":0.112272},
+{"id":"4","value":0.130548},
+{"id":"5","value":0.631854}
+]}

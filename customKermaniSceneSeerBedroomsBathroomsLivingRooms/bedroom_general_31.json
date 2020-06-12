@@ -1,0 +1,38 @@
+{
+"vertices":[
+{"id":"0","name":"room","Leaves":[],"frequency":0.989556},
+{"id":"1","name":"wall","Leaves":[{"name":"wall","frequency":0.575116 }],"frequency":0.819843},
+{"id":"2","name":"pillow","Leaves":[{"name":"pillow","frequency":0.552366 }],"frequency":0.477807},
+{"id":"3","name":"floor","Leaves":[],"frequency":0.885117},
+{"id":"4","name":"night_stand","Leaves":[],"frequency":0.347258},
+{"id":"5","name":"bed","Leaves":[{"name":"bed","frequency":0.922727 }],"frequency":0.721137},
+{"id":"6","name":"refridgerator","Leaves":[],"frequency":0.373368}
+],
+"rules":[
+{"id":"0","source":"5","target":"1","factor":"proximity"},
+{"id":"1","source":"5","target":"4","factor":"proximity"},
+{"id":"2","source":"1","target":"1","factor":"orientation_parallel"},
+{"id":"3","source":"1","target":"2","factor":"orientation_parallel"},
+{"id":"4","source":"5","target":"1","factor":"orientation_parallel"},
+{"id":"5","source":"1","target":"5","factor":"orientation_perpendicular"},
+{"id":"6","source":"2","target":"2","factor":"vertical-support"},
+{"id":"7","source":"0","target":"1","factor":"vertical-support"},
+{"id":"8","source":"3","target":"1","factor":"vertical-support"},
+{"id":"9","source":"3","target":"6","factor":"vertical-support"},
+{"id":"10","source":"3","target":"5","factor":"support"},
+{"id":"11","source":"1","target":"2","factor":"support"}
+],
+"probability":[
+{"id":"0","value":0.222025},
+{"id":"1","value":0.175844},
+{"id":"2","value":0.206039},
+{"id":"3","value":0.184725},
+{"id":"4","value":0.115453},
+{"id":"5","value":0.117229},
+{"id":"6","value":0.104439},
+{"id":"7","value":0.637076},
+{"id":"8","value":0.138381},
+{"id":"9","value":0.130548},
+{"id":"10","value":0.631854},
+{"id":"11","value":0.0966057}
+]}
