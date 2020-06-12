@@ -192,7 +192,6 @@ def createGenRoomsObjects(dir_name):
 #createGenRoomsObjects(Kermani)
 #createGenRoomsObjectsAndRelationships(dir_name)
 
-#test create csv file
 
 
 
