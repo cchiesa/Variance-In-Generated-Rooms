@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import re
 from sklearn.metrics import jaccard_score
+from python-Levenshtein import hamming
+from distance import Levenshtein
 #from pandas import ExcelWriter
 #from pandas import ExcelFile
 
@@ -71,7 +73,14 @@ def cluster(csv_file, index_file, genrooms_file, out_file):
         distances = []
         for j in range(0, len(clusters)):
             if(clusters[i] == clusters[j]):  # if in same cluster
-                distances.append(jaccard_score(data.loc[i], data.loc[j]))
+                '''cluster_distances[clusters[i]].append(
+                    jaccard_score(data.loc[i], data.loc[j]))'''
+                hamming(data.loc[i], data.loc[j])
+
+    print(cluster_distances)
+
+    for cl in cluster_distances:
+        print(sum(cl)/len(cl))
 
     # Print the cluster centroids
     # print(km.cluster_centroids_)
