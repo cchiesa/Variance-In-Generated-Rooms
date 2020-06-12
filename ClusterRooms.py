@@ -58,9 +58,9 @@ def cluster(csv_file, index_file, genrooms_file, out_file):
     # data = df.sample(frac = 0.003)
     data = df
 
-    km = KModes(n_clusters=44, init='random', n_init=1, verbose=1)
+    km = KModes(n_clusters=9, init='random', n_init=1, verbose=1)
 
-    clusters = km.fit(data)
+    clusters = km.fit_predict(data)
     print(clusters)
 
     # Print the cluster centroids
@@ -89,7 +89,7 @@ def cluster(csv_file, index_file, genrooms_file, out_file):
             #print("room: ",type(room))
             #print("center: ", type(center))
             if (compare(room, center)):
-                print(index)
+                # print(index)
                 indices.append(index)
             index = index + 1
 
@@ -103,3 +103,4 @@ def cluster(csv_file, index_file, genrooms_file, out_file):
 
 # main
 # cluster(csv,index,genroom,out)
+cluster("kermaniBedroomsBathroomsLivingRoomsGenRoomsObjects.csv","GenRoomskermaniBedroomsBathroomsLivingRoomsObjects.txt","GenRoomskermaniBedroomsBathroomsLivingRoomsObjects.txt","kermaniBBLRCLusterResults.txt")
