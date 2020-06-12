@@ -189,10 +189,15 @@ def createGenRoomsObjects(dir_name):
     read_file.to_csv (dir_name+"GenRoomsObjects.csv", index=None)
 
 ##main
-#createGenRoomsObjects(Kermani)
-#createGenRoomsObjectsAndRelationships(dir_name)
+createGenRoomsObjects("customKermaniSceneSeerBedroomsBathroomsLivingRooms")
+createGenRoomsObjectsAndRelationships("customKermaniSceneSeerBedroomsBathroomsLivingRooms")
+createGenRoomsObjects("kermaniBedroomsBathroomsLivingRooms")
+createGenRoomsObjectsAndRelationships("kermaniBedroomsBathroomsLivingRooms")
+createGenRoomsObjects("sceneSeerBedroomsBathroomsLivingRooms")
+createGenRoomsObjectsAndRelationships("sceneSeerBedroomsBathroomsLivingRooms")
+createGenRoomsObjects("customBedroomsBathroomsLivingRooms")
+createGenRoomsObjectsAndRelationships("customBedroomsBathroomsLivingRooms")
 
-#test create csv file
 
 
 
