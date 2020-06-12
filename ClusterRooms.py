@@ -78,7 +78,10 @@ def cluster(csv_file, index_file, genrooms_file, out_file):
     print(cluster_distances)
     file_avg = open(out_file+"cluster_avg_distances.txt", "w")
     for cl in cluster_distances:
-        avg = sum(cl)/len(cl)
+        if(len(cl)==0):
+            avg = "Cluster is empty"
+        else:
+            avg = sum(cl)/len(cl)
         file_avg.write(str(avg)+"\n")
 
     # Print the cluster centroids
@@ -123,4 +126,18 @@ def cluster(csv_file, index_file, genrooms_file, out_file):
 # main
 # cluster(csv,index,genroom,out)
 cluster("kermaniBedroomsBathroomsLivingRoomsGenRoomsObjects.csv", "GenRoomskermaniBedroomsBathroomsLivingRoomsObjects.txt",
-        "GenRoomskermaniBedroomsBathroomsLivingRoomsObjects.txt", "kermaniBBLRCLusterResults.txt")
+        "GenRoomskermaniBedroomsBathroomsLivingRoomsObjects.txt", "kermaniObjectBBLRCLusterResults.txt")
+cluster("kermaniBedroomsBathroomsLivingRoomsGenRoomsObjectsAndRelationships.csv", "GenRoomskermaniBedroomsBathroomsLivingRoomsObjectsAndRelationships.txt",
+        "GenRoomskermaniBedroomsBathroomsLivingRoomsObjectsAndRelationships.txt", "kermaniObjectAndRelationshipsBBLRCLusterResults.txt")
+cluster("sceneSeerBedroomsBathroomsLivingRoomsGenRoomsObjects.csv", "GenRoomssceneSeerBedroomsBathroomsLivingRoomsObjects.txt",
+        "GenRoomssceneSeerBedroomsBathroomsLivingRoomsObjects.txt", "sceneSeerObjectBBLRCLusterResults.txt")
+cluster("sceneSeerBedroomsBathroomsLivingRoomsGenRoomsObjectsAndRelationships.csv", "GenRoomssceneSeerBedroomsBathroomsLivingRoomsObjectsAndRelationships.txt",
+        "GenRoomssceneSeerBedroomsBathroomsLivingRoomsObjectsAndRelationships.txt", "sceneSeerObjectAndRelationshipsBBLRCLusterResults.txt")
+cluster("customBedroomsBathroomsLivingRoomsGenRoomsObjects.csv", "GenRoomscustomBedroomsBathroomsLivingRoomsObjects.txt",
+        "GenRoomscustomBedroomsBathroomsLivingRoomsObjects.txt", "customObjectBBLRCLusterResults.txt")
+cluster("customBedroomsBathroomsLivingRoomsGenRoomsObjectsAndRelationships.csv", "GenRoomscustomBedroomsBathroomsLivingRoomsObjectsAndRelationships.txt",
+        "GenRoomscustomBedroomsBathroomsLivingRoomsObjectsAndRelationships.txt", "customObjectAndRelationshipsBBLRCLusterResults.txt")
+cluster("customKermaniSceneSeerBedroomsBathroomsLivingRoomsGenRoomsObjects.csv", "GenRoomscustomKermaniSceneSeerBedroomsBathroomsLivingRoomsObjects.txt",
+        "GenRoomscustomKermaniSceneSeerBedroomsBathroomsLivingRoomsObjects.txt", "customKermaniSceneSeerObjectBBLRCLusterResults.txt")
+cluster("customKermaniSceneSeerBedroomsBathroomsLivingRoomsGenRoomsObjectsAndRelationships.csv", "GenRoomscustomKermaniSceneSeerBedroomsBathroomsLivingRoomsObjectsAndRelationships.txt",
+        "GenRoomscustomKermaniSceneSeerBedroomsBathroomsLivingRoomsObjectsAndRelationships.txt", "customKermaniSceneSeerObjectAndRelationshipsBBLRCLusterResults.txt")
