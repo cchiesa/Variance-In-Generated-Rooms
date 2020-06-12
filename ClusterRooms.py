@@ -76,7 +76,7 @@ def cluster(csv_file, index_file, genrooms_file, out_file):
                     jaccard_score(data.loc[i], data.loc[j]))
 
     print(cluster_distances)
-    file_avg = open("cluster_avg_distances.txt", "w")
+    file_avg = open(out_file+"cluster_avg_distances.txt", "w")
     for cl in cluster_distances:
         avg = sum(cl)/len(cl)
         file_avg.write(str(avg)+"\n")
