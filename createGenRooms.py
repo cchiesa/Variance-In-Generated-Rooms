@@ -1,5 +1,6 @@
 import json
 import os
+import pandas as pd
 
 #directory name (SUNRGBDMotif), 
 def createGenRoomsObjectsAndRelationships(dir_name):
@@ -93,6 +94,9 @@ def createGenRoomsObjectsAndRelationships(dir_name):
 
     file.close()
 
+    read_file = pd.read_csv ("GenRooms"+dir_name+"ObjectsAndRelationships.txt")
+    read_file.to_csv (dir_name+"GenRoomsObjectsAndRelationships.csv", index=None)
+
 ##for just objects
 def createGenRoomsObjects(dir_name):
     allRoomTypes = [] #keep track of roomtype at index
@@ -181,6 +185,14 @@ def createGenRoomsObjects(dir_name):
 
     file.close()
 
+    read_file = pd.read_csv ("GenRooms"+dir_name+"Objects.txt")
+    read_file.to_csv (dir_name+"GenRoomsObjects.csv", index=None)
+
 ##main
 #createGenRoomsObjects(Kermani)
 #createGenRoomsObjectsAndRelationships(dir_name)
+
+#test create csv file
+
+
+
